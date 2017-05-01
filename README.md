@@ -1,5 +1,5 @@
 # ![ ](https://github.com/jlaumon/old-blogbd/blob/master/pingus/wait.gif) [plopounet.net](http://plopounet.net)
-An archive of my old webcomic blog. Very egocentric. Meant to be funny.
+An archive of my old webcomic blog (2009-2010). Very egocentric. Meant to be funny.
 
 Was hosted by [alwaysdata](https://www.alwaysdata.com) and powered by [Django](https://www.djangoproject.com/) (a Python web framework). 
 
