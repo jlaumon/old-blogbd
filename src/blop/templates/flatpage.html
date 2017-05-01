@@ -1,0 +1,11 @@
+{% extends "global.html" %}
+
+{% block content %}
+	{% if flatpage %}
+		<h2 id="page_statique">{{ flatpage.title|safe }}</h2>
+		<div class="text">{{ flatpage.content|safe }}</div>
+		
+	{% else %}
+		<p>Y a rien ici alors maintenant tu te casses.</p>
+	{% endif %}
+{% endblock %}

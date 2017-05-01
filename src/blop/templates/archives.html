@@ -1,0 +1,32 @@
+{% extends "global.html" %}
+ 
+
+{% block content %}
+	<h2><span class=icon_folder>Toutes les archives</span></h2>
+	{% if all_archive_list %}
+		<ul>
+		{% for archive_date in all_archive_list %}
+			<li><a href="{{ archive_date.url }}">{{ archive_date.label }}</a></li>
+		{% endfor %}
+		</ul>
+	{% else %}
+		<ul>
+			<li><a>J'ai pas d'archives :(</a></li>
+		</ul>
+	{% endif %}
+	
+	<h2><span class=icon_pictures>Toutes les catégories</span></h2>
+	{% if category_list %}
+		<ul>
+		{% for category in category_list %}
+			<li><a href="{{ category.get_absolute_url }}">{{ category }}</a></li>
+		{% endfor %}
+		</ul>
+	{% else %}
+		<ul>
+			<li><a>J'ai pas de catégories :(</a></li>
+		</ul>
+	{% endif %}
+{% endblock %}
+
+

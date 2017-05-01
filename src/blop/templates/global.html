@@ -1,0 +1,141 @@
+{% extends "base.html" %}
+
+
+{% block banner %}
+	{% if banner %}
+		<a href="/">
+			<img src="{{ banner.img.url }}" alt="Le blog BD de plop"/>
+		</a>
+	{% else %}
+		<a href="/">
+			<h1>{{ site.name }}</h1>
+		</a>
+	{% endif %}
+{% endblock %}
+
+{% block random_image %}
+	{% if random_image %}
+		<div class="image">
+			<img src="{{ random_image.img.url }}" alt="{{ random_image.name }}" />
+		</div>
+		{% if random_image.box %}
+		<div class="box">
+			<div class="inbox">
+				{% ifnotequal random_image.display_name "none" %}
+					<h4
+					{% ifequal random_image.display_name "left" %}
+						class="text_align_left"
+					{% endifequal %}
+					{% ifequal random_image.display_name "center" %}
+						class="text_align_center"
+					{% endifequal %}
+					{% ifequal random_image.display_name "right" %}
+						class="text_align_right"
+					{% endifequal %}
+					>
+					{% if random_image.url %}<a href="{{ random_image.url }}">{% endif %}
+					<span class="{{ random_image.cssclass }}">{{ random_image.name }}</span> 
+					{% if random_image.url %}</a>{% endif %}
+					{{ random_image.transition }}</h4>
+					{% if random_image.caption %}
+						<div class="blank"></div>
+					{% endif %}
+				{% endifnotequal %}
+				{% if random_image.caption %}
+					<p>{{ random_image.caption|safe }}</p>
+				{% endif %}
+			</div>
+		</div>
+		<div class="bas"></div>
+		{% endif %}
+	{% endif %}
+{% endblock %}
+
+
+{% block nav_pages %}
+	{% if next %}
+		<a href="{{ next }}" class="arrow next" onfocus="this.blur()"></a>
+	{% else %}
+		<div class="arrow next_none"></div>
+	{% endif %}
+
+	{% if previous %}
+		<a href="{{ previous }}" class="arrow previous" onfocus="this.blur()"></a>
+	{% else %}
+		<div class="arrow previous_none"></div>
+	{% endif %}
+	
+	<a href="/" class="arrow home" onfocus="this.blur()"></a>
+
+{% endblock %}
+
+
+
+{% block menu %}
+	<div class="glossymenu">
+		<a class="menuitem" href="/" onfocus="this.blur()"><span class="icon_house">Accueil</span></a>
+		
+		<a class="menuitem submenuheader" href="" onfocus="this.blur()"><span class="icon_heart">Liens</span></a>
+		<div class="submenu text">
+			{% if link_list %}
+				<ul>
+				{% for link in link_list %}
+					<!--<li style="height:50px;background-image:url({{ link.img_name.url }});">
+						<a
+							href="{{ link.url }}"
+							onmouseover="fadeOutImage(this)"
+							onmouseout="fadeInImage(this)"
+						>
+							<img src="{{ link.img_pict.url }}" class="link{{ forloop.counter }}" alt="{{ link.name }}"/>
+						</a>
+					</li>-->
+					<li><a href="{{ link.url }}">{{ link.name }}</a></li>
+				{% endfor %}
+				</ul>
+			{% else %}
+				<ul>
+					<li><a>J'ai pas d'amis :(</a></li>
+				</ul>
+			{% endif %}
+		</div>	
+		<a class="menuitem submenuheader" href="" onfocus="this.blur()"><span class="icon_folder">Archives</span></a>
+		<div class="submenu text">
+			{% if archive_list %}
+				<ul>
+				{% for archive_date in archive_list %}
+					<li><a href="{{ archive_date.url }}">{{ archive_date.label }}</a></li>
+				{% endfor %}
+					<li><a href="/archives/">Toutes les archives</a></li>
+				</ul>
+			{% else %}
+				<ul>
+					<li><a>J'ai pas d'archives :(</a></li>
+				</ul>
+			{% endif %}
+		</div>	
+		<a class="menuitem submenuheader" href="" onfocus="this.blur()"><span class="icon_pictures">Catégories</span></a>
+		<div class="submenu text">
+			{% if category_list %}
+				<ul>
+				{% for category in category_list %}
+					<li><a href="{{ category.get_absolute_url }}">{{ category }}</a></li>
+				{% endfor %}
+				</ul>
+			{% else %}
+				<ul>
+					<li><a>J'ai pas de catégories :(</a></li>
+				</ul>
+			{% endif %}
+		</div>
+		<a class="menuitem submenuheader" href="" onfocus="this.blur()"><span class="icon_feed">Syndication</span></a>
+		<div class="submenu text">
+			<ul>
+			<li><a href="/feeds/rss/">Fil rss</a></li>
+			<li><a href="/feeds/rsscomments/">Fil rss commentaires</a></li>
+			<li><a href="/feeds/atom/">Fil atom</a></li>
+			<li><a href="/feeds/atomcomments/">Fil atom commentaires</a></li>
+			</ul>
+		</div>
+		<a class="menuitem" href="/about/" onfocus="this.blur()"><span class="icon_information">À propos</span></a>
+	</div>
+{% endblock %}

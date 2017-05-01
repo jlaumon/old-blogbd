@@ -1,0 +1,38 @@
+{% extends "global.html" %}
+
+
+{% block content %}
+	{% if entry_list %}
+		{% for e in entry_list %}
+			{% if e.entry.is_public %}
+				<h2 id="{{ e.entry.slug }}"><a href="{{ e.entry.get_absolute_url }}"><span class="{{ e.entry.category.cssclass }}">{{ e.entry.title }}</span></a>
+				{% if not e.entry.category.is_invisible %}
+					<span class="category">dans la catégorie <a href="{{ e.entry.category.get_absolute_url }}">{{ e.entry.category }}</a></span>
+				{% endif %}
+				</h2>
+				<div class="meta">
+					<table>
+					<tr>
+						<td><span class="icon_status_online">{{e.entry.author}}</span></td>
+						<td><span class="icon_date">{{e.entry.date|date:"d"}}/{{e.entry.date|date:"m"}}/{{e.entry.date|date:"Y"}}</span></td>
+						<td><span class="icon_time">{{e.entry.date|time:"H"}}h{{e.entry.date|time:"i"}} </span></td>
+					</tr>
+					</table>				
+				</div>
+				<div class="text">
+				{{e.entry.content|safe}}
+				</div>
+				<div class="comments">
+					<span class="icon_comment"><a href="{{ e.entry.get_absolute_url }}#comments">{{ e.comment_link }}</a></span>
+				</div>
+				{% if not forloop.last %}
+					<div class="blank"></div>
+				{% endif %}
+			{% endif %}
+		{% endfor %}
+	{% else %}
+		<p>Y a rien ici alors maintenant tu te casses.</p>
+	{% endif %}
+{% endblock %}
+
+

@@ -1,0 +1,80 @@
+{% extends "global.html" %}
+
+{% block content %}
+	{% if entry %}
+		<h2 id="article"><a href="{{ entry.get_absolute_url }}"><span class="{{ entry.category.cssclass }}">{{ entry.title }}</span></a>
+		{% if not entry.category.is_invisible %}
+			<span class="category">dans la catégorie <a href="{{ entry.category.get_absolute_url }}">{{ entry.category }}</a></span>
+		{% endif %}
+		</h2>
+		<div class="meta">
+			<table>
+			<tr>
+				<td><span class="icon_status_online">{{entry.author}}</span></td>
+				<td><span class="icon_date">{{entry.date|date:"d"}}/{{entry.date|date:"m"}}/{{entry.date|date:"Y"}}</span></td>
+				<td><span class="icon_time">{{entry.date|time:"H"}}h{{entry.date|time:"i"}} </span></td>
+			</tr>
+			</table>				
+		</div>
+		<div class="text">{{entry.content|safe}}</div>
+		
+		{% if comment_list %}
+			<h3 id="comments" class="icon_comment">Commentaires</h3>
+			{% for c in comment_list %}
+			<div class="comment" id="{{ c.comment.author }}{{ c.comment.date.isoformat }}">
+				<div class="count">
+					<a href="{{ entry.get_absolute_url }}#{{ c.comment.author }}{{ c.comment.date.isoformat }}">{{ forloop.counter }}</a>
+				</div>
+				<div class="box">
+					<div class="box_comment">
+						<div class="message">
+							{{ c.comment.getHTML|safe }}
+						</div>
+						<div class="meta">
+							<b>{% if c.comment.url %}
+								<a href="{{ c.comment.url }}">{{ c.comment.author }}</a>
+							{% else %}
+								{{ c.comment.author }}
+							{% endif %}</b>
+							à {{ c.comment.date|time:"H" }}h{{ c.comment.date|time:"i" }}
+							le {{ c.comment.date|date:"d" }}/{{ c.comment.date|date:"m" }}/{{ c.comment.date|date:"Y" }}
+						</div>
+					</div>
+					{% for reply in c.reply_list %}
+					<div class="box_reply">
+						<div class="author">
+							Réponse de <b>{{ reply.author }}</b> :
+						</div>
+						<div class="reply">
+							{{ reply.content|safe }}
+						</div>
+					</div>
+					{% endfor %}
+				</div>
+			</div>
+			{% endfor %}
+		{% endif %}
+		
+		{% if comment_list %}
+			<h3 id="addcomment" class="icon_comment_edit">Ajouter un commentaire</h3>
+		{% else %}
+			<h3 id="addcomment" class="icon_comment_edit"><span id="comments">Ajouter un commentaire</span></h3>
+		{% endif %}
+		<form action="{{ article.get_absolute_url }}#addcomment" method="post" class="comment_forms">
+			{% for field in form %}
+				<div class="form">
+					{{ field.errors }}
+					{{ field.label_tag }} {{ field }}
+				</div>
+    		{% endfor %}
+		<p style="display: none;">
+			<label for="id_age">Si vous soumettez quelque chose dans ce champs votre commentaire va être considéré comme étant indésirable</label>
+			<input id="id_age" type="text" name="age"/>
+		</p>
+		<p style="font-size: 90%; color: #888888; text-align: center;">Le code HTML est affiché comme du texte et les adresses web sont automatiquement transformées.</p>
+		<p><input type="submit" value="Envoyer" class="submit"/></p>
+		</form>
+	{% else %}
+		<p>Y a rien ici alors maintenant tu te casses.</p>
+	{% endif %}
+{% endblock %}

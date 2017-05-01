@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+	<head>
+		<title>Le blog BD de plop</title>
+		<meta name="keywords" lang="fr" content="plop, plopounet, BD, blog, dessin, illustration, geek, libre, pingus, django, python" />
+		<meta name="description" content="Le blog BD de plop, un tas de dessins stupides et d'histoires de geek. Le tout libre de droit !" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="Content-Language" content="fr" />
+		<meta http-equiv="Content-Script-Type" content="text/javascript" />
+		<link href="/design/style.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="/accordion/design_accord/accord.css" />
+		<link rel="stylesheet" type="text/css" href="/lightbox/css/jquery.lightbox-0.5.css" media="screen" />
+		<link rel="shortcut icon" href="/pingus/wait.gif" />
+		<link rel="alternate" type="application/atom+xml" title="Le blog BD de plop - Atom" href="http://plopounet.net/feeds/atom/" />
+		<link rel="alternate" type="application/rss+xml" title="Le blog BD de plop - RSS" href="http://plopounet.net/feeds/rss/" />
+		<script type="text/javascript" src="/accordion/js/prototype.js"></script>
+		<script type="text/javascript" src="/accordion/ddaccordion.js"></script>
+		<script type="text/javascript" src="/jquery-1.3.1.min.js"></script>
+		<script type="text/javascript" src="/preloadImages.js"></script>
+		<script type="text/javascript" src="/pingus/jquery.timer.js"></script>
+		<script type="text/javascript" src="/pingus/jquery.sound.js"></script>
+		<script type="text/javascript" src="/pingus/pingus.js"></script>
+	<!-- NON LIBRE -->
+		<script type="text/javascript" src="/lightbox/js/jquery.lightbox-0.5.min.js"></script>
+	<!-- FIN NON LIBRE -->
+		<script type="text/javascript">
+				
+		ddaccordion.init({
+			headerclass: "submenuheader", //Shared CSS class name of headers group
+			contentclass: "submenu", //Shared CSS class name of contents group
+			revealtype: "click", //Reveal content when user clicks or onmouseover the header? Valid value: "click" or "mouseover
+			collapseprev: true, //Collapse previous content (so only one open at any time)? true/false 
+			defaultexpanded: [], //index of content(s) open by default [index1, index2, etc] [] denotes no content
+			animatedefault: false, //Should contents open by default be animated into view?
+			persiststate: true, //persist state of opened contents within browser session?
+			toggleclass: ["", ""], //Two CSS classes to be applied to the header when it's collapsed and expanded, respectively ["class1", "class2"]
+			togglehtml: [
+				"suffix", 
+				"/accordion/design_accord/plus.png", 
+				"/accordion/design_accord/minus.png"
+			], 
+			animatespeed: "normal", //speed of animation: "fast", "normal", or "slow"
+			oninit:function(headers, expandedindices){ //custom code to run when headers have initalized
+				//do nothing
+			},
+			onopenclose:function(header, index, state, isuseractivated){ //custom code to run whenever a header is opened or closed
+				//do nothing
+			}
+		});
+		
+		function fadeOutImage() 
+		{
+			$(fadeOutImage.arguments[0]).fadeTo(200, 0);
+		};
+		
+		function fadeInImage() 
+		{
+			$(fadeInImage.arguments[0]).fadeTo(200, 1);
+		};
+		
+		$.preloadImages(
+			"/accordion/design_accord/minus.png",
+			"/accordion/design_accord/menuitem2.png",
+			"/design/accueil_hover.png"
+		);
+
+		$(function() {
+			$('a.lightbox').lightBox({
+				imageLoading: '/lightbox/images/lightbox-ico-loading.gif',
+				imageBtnClose: '/lightbox/images/lightbox-btn-close.gif',
+				imageBtnPrev: '/lightbox/images/lightbox-btn-prev.gif',
+				imageBtnNext: '/lightbox/images/lightbox-btn-next.gif'
+			});
+		});
+
+		pingus.play({
+    		id: "pingus",		// Id of the div where pingus will live
+    		limit_left: 20,		// Where pingus starts, in pixels (0 means pingus starts at the beginning of its parent div)
+    		limit_right: 490,	// Where pingus turns back, in pixels
+    		sound_enabled: true,// Enable sounds (true/false)
+    		url_media: "http://plopounet.alwaysdata.net/pingus/"		// url of the pingus directory (DON'T FORGET THE TRAILING SLASH)
+		});
+		</script>
+
+	</head>
+	<body>
+	<div class="body">
+		<div class="banner">
+			{% block banner %}
+			{% endblock %}
+		</div>
+		<div class="random_image">
+			{% block random_image %}
+			{% endblock %}
+		</div>
+		<div class="header">
+			<div id="pingus"></div>
+		</div>
+		<div class="blank"></div>
+		<div class="middle">
+			<div class="content">
+				{% block content %}
+				{% endblock %}
+			</div>
+			<div class="nav_pages">
+				{% block nav_pages %}
+				{% endblock %}
+			</div>
+		</div>
+		<div class="footer">
+			{% block footer %}
+			{% endblock %}
+		</div>
+		<div class="menu">
+			{% block menu %}
+			{% endblock %}
+		</div>
+	</div>
+	<script type="text/javascript">
+		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+		document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+		try {
+		var pageTracker = _gat._getTracker("UA-2508341-5");
+		pageTracker._trackPageview();
+		} catch(err) {}
+	</script>
+	</body>
+</html>
+

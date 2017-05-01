@@ -1,0 +1,5 @@
+{{ obj.content|safe }}
+<p>Publié par {{obj.author}}
+à {{obj.date|time:"H"}}h{{obj.date|time:"i"}}
+le {{obj.date|date:"d"}}/{{obj.date|date:"m"}}/{{obj.date|date:"Y"}}, 
+catégorie <a href="{{ obj.category.get_absolute_url }}">{{ obj.category }}</a></p>
