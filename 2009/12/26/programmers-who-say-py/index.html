@@ -1,0 +1,634 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+	
+<!-- Mirrored from plopounet.net/2009/12/26/programmers-who-say-py/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 01 May 2017 10:44:04 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+		<title>Le blog BD de plop</title>
+		<meta name="keywords" lang="fr" content="plop, plopounet, BD, blog, dessin, illustration, geek, libre, pingus, django, python" />
+		<meta name="description" content="Le blog BD de plop, un tas de dessins stupides et d'histoires de geek. Le tout libre de droit !" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="Content-Language" content="fr" />
+		<meta http-equiv="Content-Script-Type" content="text/javascript" />
+		<link href="../../../../design/style.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="../../../../accordion/design_accord/accord.css" />
+		<link rel="stylesheet" type="text/css" href="../../../../lightbox/css/jquery.lightbox-0.5.css" media="screen" />
+		<link rel="shortcut icon" href="../../../../pingus/wait.gif" />
+		<link rel="alternate" type="application/atom+xml" title="Le blog BD de plop - Atom" href="../../../../feeds/atom/index.html" />
+		<link rel="alternate" type="application/rss+xml" title="Le blog BD de plop - RSS" href="../../../../feeds/rss/index.html" />
+		<script type="text/javascript" src="../../../../accordion/js/prototype.html"></script>
+		<script type="text/javascript" src="../../../../accordion/ddaccordion.js"></script>
+		<script type="text/javascript" src="../../../../jquery-1.3.1.min.js"></script>
+		<script type="text/javascript" src="../../../../preloadImages.js"></script>
+		<script type="text/javascript" src="../../../../pingus/jquery.timer.js"></script>
+		<script type="text/javascript" src="../../../../pingus/jquery.sound.js"></script>
+		<script type="text/javascript" src="../../../../pingus/pingus.js"></script>
+	<!-- NON LIBRE -->
+		<script type="text/javascript" src="../../../../lightbox/js/jquery.lightbox-0.5.min.js"></script>
+	<!-- FIN NON LIBRE -->
+		<script type="text/javascript">
+				
+		ddaccordion.init({
+			headerclass: "submenuheader", //Shared CSS class name of headers group
+			contentclass: "submenu", //Shared CSS class name of contents group
+			revealtype: "click", //Reveal content when user clicks or onmouseover the header? Valid value: "click" or "mouseover
+			collapseprev: true, //Collapse previous content (so only one open at any time)? true/false 
+			defaultexpanded: [], //index of content(s) open by default [index1, index2, etc] [] denotes no content
+			animatedefault: false, //Should contents open by default be animated into view?
+			persiststate: true, //persist state of opened contents within browser session?
+			toggleclass: ["", ""], //Two CSS classes to be applied to the header when it's collapsed and expanded, respectively ["class1", "class2"]
+			togglehtml: [
+				"suffix", 
+				"../../../../accordion/design_accord/plus.png", 
+				"../../../../accordion/design_accord/minus.png"
+			], 
+			animatespeed: "normal", //speed of animation: "fast", "normal", or "slow"
+			oninit:function(headers, expandedindices){ //custom code to run when headers have initalized
+				//do nothing
+			},
+			onopenclose:function(header, index, state, isuseractivated){ //custom code to run whenever a header is opened or closed
+				//do nothing
+			}
+		});
+		
+		function fadeOutImage() 
+		{
+			$(fadeOutImage.arguments[0]).fadeTo(200, 0);
+		};
+		
+		function fadeInImage() 
+		{
+			$(fadeInImage.arguments[0]).fadeTo(200, 1);
+		};
+		
+		$.preloadImages(
+			"../../../../accordion/design_accord/minus.png",
+			"../../../../accordion/design_accord/menuitem2.png",
+			"../../../../design/accueil_hover.png"
+		);
+
+		$(function() {
+			$('a.lightbox').lightBox({
+				imageLoading: '/lightbox/images/lightbox-ico-loading.gif',
+				imageBtnClose: '/lightbox/images/lightbox-btn-close.gif',
+				imageBtnPrev: '/lightbox/images/lightbox-btn-prev.gif',
+				imageBtnNext: '/lightbox/images/lightbox-btn-next.gif'
+			});
+		});
+
+		pingus.play({
+    		id: "pingus",		// Id of the div where pingus will live
+    		limit_left: 20,		// Where pingus starts, in pixels (0 means pingus starts at the beginning of its parent div)
+    		limit_right: 490,	// Where pingus turns back, in pixels
+    		sound_enabled: true,// Enable sounds (true/false)
+    		url_media: "http://plopounet.alwaysdata.net/pingus/"		// url of the pingus directory (DON'T FORGET THE TRAILING SLASH)
+		});
+		</script>
+
+	</head>
+	<body>
+	<div class="body">
+		<div class="banner">
+			
+	
+		<a href="../../../../index-2.html">
+			<img src="../../../../banner/banniere-geek_.png" alt="Le blog BD de plop"/>
+		</a>
+	
+
+		</div>
+		<div class="random_image">
+			
+	
+		<div class="image">
+			<img src="../../../../random_image/ff1.png" alt="Firefox" />
+		</div>
+		
+		<div class="box">
+			<div class="inbox">
+				
+					<h4
+					
+						class="text_align_left"
+					
+					
+					
+					>
+					<a href="http://fr.wikipedia.org/wiki/Firefox#Les_diff.C3.A9rents_noms_du_logiciel">
+					<span class="icon_comment">Firefox</span> 
+					</a>
+					dit :</h4>
+					
+						<div class="blank"></div>
+					
+				
+				
+					<p>Pourquoi tout le monde me traite de renard alors qu'en réalité je suis un panda roux ?</p>
+				
+			</div>
+		</div>
+		<div class="bas"></div>
+		
+	
+
+		</div>
+		<div class="header">
+			<div id="pingus"></div>
+		</div>
+		<div class="blank"></div>
+		<div class="middle">
+			<div class="content">
+				
+	
+		<h2 id="article"><a href="index.html"><span class="icon_page_white_edit">The programmers who say .py</span></a>
+		
+			<span class="category">dans la catégorie <a href="../../../../cat/3615-mylife/index.html">3615 Mylife</a></span>
+		
+		</h2>
+		<div class="meta">
+			<table>
+			<tr>
+				<td><span class="icon_status_online">plop</span></td>
+				<td><span class="icon_date">26/12/2009</span></td>
+				<td><span class="icon_time">16h01 </span></td>
+			</tr>
+			</table>				
+		</div>
+		<div class="text"><p>La nuit du 3 au 4 décembre s'est déroulée <a href="http://www.nuitdelinfo.com/doku/">La nuit de l'info</a>. C'était un concours où plusieurs équipes dans toute la France (79 en tout, soit presque 600 personnes) ont tenté (en vain) de réaliser un site web en une nuit. Le tout avec un sujet assez incompréhensible, plus ou moins relié à l'écologie et des défis lancés par des sponsors avec des récompenses à la clé.</p>
+
+<div style="text-align:center;"><a href="http://www.nuitdelinfo.com/doku/"><img alt="Nuit de l'info" src="../../../../doku/_media/infos/infos-nuit_info_logo.html" /></a></div>
+
+<p>Evidemment, si je vous en parle, c'est parce que j'y ai participé. Mon équipe c'était <a href="http://www.nuitdelinfo.com/doku/teams/the_programmers_who_say_py/start">The programmers who say .py</a> (c'est une référence aux monthy python et <a href="http://www.youtube.com/watch?v=2UbtcmjfKa8">the knights who say ni</a> et on a programmé en <a href="http://www.python.org/">python</a>, d'où le ".py").</p>
+
+<p>Et vous savez quoi ? On a gagné 2 défis, <b>soit 1500 euros + 500 euros de bons d'achat</b> sur le <a href="http://www.ankama-shop.com/fr">ankama-shop</a> et 1 an d'abonnement à Dofus pour chacun des membres de l'équipe !</p>
+
+<div style="text-align:center;"><img alt="The programmers who say .py" src="../../../../img/2009/12/26/091226033852581275125721.gif" /></div>
+
+<p>Le premier défis c'était sur de la modélisation <a href="http://fr.wikipedia.org/wiki/Unified_Modeling_Language">UML</a>, et pour le 2e il fallait faire un espèce de compagnon interactif censé "aider" le visiteur du site. Je vais vous en parler plus longuement parce que c'est moi qui l'ai fait celui là :D</p>
+
+<p>Notre site web :  <a href="http://greenbrian.alwaysdata.net/">GREENBRIAN</a></p>
+
+<p>Notre compagnon est un espèce de blob animé mais qui n'aide pas du tout l'utilisateur ^^. On peut le déplacer en drag&drop, le rappeler à sa place, le faire disparaitre/apparaitre et lui parler (mais il met un peu de temps a répondre au départ).</p>
+
+<div style="text-align:center;"><a href="http://greenbrian.alwaysdata.net/"><img alt="blob" src="../../../../blob_normal.png" /></a></div>
+
+<p>Il comprend pas beaucoup de mots mais je vous conseille quand même d'essayer de l'insulter 4 ou 5 fois d'affilée. Il a du répondant :D</p>
+
+<p>Pour la petite histoire, j'ai modélisé le blob en 3D avec <a href="http://www.blender.org/">blender</a> (fichier .blend <a href="http://attila12.online.fr/upload/blob.blend">ici</a>) et il est animé en javascript sur la même base que <a href="#pingus">le petit pingus</a> présent sous la bannière de mon blog. La partie parole a été programmée par un collègue sur la base du très connu <a href="http://alice.pandorabots.com/">bot Alice</a>.</p>
+
+<p>Voila, joyeux Noel  !<br/>Et qui sait, peut etre à bientôt pour une prochaine note !</p>
+</div>
+		
+		
+			<h3 id="comments" class="icon_comment">Commentaires</h3>
+			
+			<div class="comment" id="Etienne2010-01-01T22:46:52">
+				<div class="count">
+					<a href="index.html#Etienne2010-01-01T22:46:52">1</a>
+				</div>
+				<div class="box">
+					<div class="box_comment">
+						<div class="message">
+							<p>Ouais faut dire qu'il déchirait le blob !!</p><p>Par contre je suis déçu qu'il y ait pas plus d'explication sur le sujet UML... :p</p><p></p><p>Tant pis je les fais : ben on a passé une nuit à faire un super dossier d'UML du site vachement bien fait et l'UML c'est génial, et l'UML c'est la vie... ... Souvenir de la nuit à 4h42 ... mais quand même l'UML ca fait mal à la tête !!!</p>
+						</div>
+						<div class="meta">
+							<b>
+								Etienne
+							</b>
+							à 22h46
+							le 01/01/2010
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+			<div class="comment" id="juju2010-01-08T23:00:54">
+				<div class="count">
+					<a href="index.html#juju2010-01-08T23:00:54">2</a>
+				</div>
+				<div class="box">
+					<div class="box_comment">
+						<div class="message">
+							<p>bravo plopounet !!!!! :D</p>
+						</div>
+						<div class="meta">
+							<b>
+								<a href="http://www.ptitenezu.blogspot.com/">juju</a>
+							</b>
+							à 23h00
+							le 08/01/2010
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+			<div class="comment" id="Lemo2010-04-12T09:47:16">
+				<div class="count">
+					<a href="index.html#Lemo2010-04-12T09:47:16">3</a>
+				</div>
+				<div class="box">
+					<div class="box_comment">
+						<div class="message">
+							<p>Loool, je découvre ton, je suis pété de rire devant ta bannière ! x)</p>
+						</div>
+						<div class="meta">
+							<b>
+								<a href="http://lemostrip.blogspot.com/">Lemo</a>
+							</b>
+							à 09h47
+							le 12/04/2010
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+			<div class="comment" id="Bouhoub2010-04-27T05:49:23">
+				<div class="count">
+					<a href="index.html#Bouhoub2010-04-27T05:49:23">4</a>
+				</div>
+				<div class="box">
+					<div class="box_comment">
+						<div class="message">
+							<p>Je me permet de rajouter un com (je sais pas si le premier est passée sinon tant pis):</p><p></p><p>knock knock "PENNY", knock knock "PENNY", knock, knock "PENNY"</p><p></p><p>Sinon j'aime beaucoup ton blop. </p>
+						</div>
+						<div class="meta">
+							<b>
+								Bouhoub
+							</b>
+							à 05h49
+							le 27/04/2010
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+			<div class="comment" id="Naritaya2010-07-25T17:55:40">
+				<div class="count">
+					<a href="index.html#Naritaya2010-07-25T17:55:40">5</a>
+				</div>
+				<div class="box">
+					<div class="box_comment">
+						<div class="message">
+							<p>Plop ! Y aurais possibilité d'avoir le code de cette magnifique petite chose verte ? Elle est vraiment sympa :P</p>
+						</div>
+						<div class="meta">
+							<b>
+								<a href="http://naritaya.org/">Naritaya</a>
+							</b>
+							à 17h55
+							le 25/07/2010
+						</div>
+					</div>
+					
+					<div class="box_reply">
+						<div class="author">
+							Réponse de <b>plop</b> :
+						</div>
+						<div class="reply">
+							<p>Biensûr !<br/> 
+Le script pour le personnage animé est là : <a href="../../../../blob.js">blob.js</a> (il faut aussi inclure <a href="../../../../jquery-1.4.2.min.js">jquery.js</a> pour que ça marche) et toutes les images du blob sont disponible dans un zip <a href="http://attila12.online.fr/blob.zip">ici</a>. Il faut avoir le code html suivant quelque part dans ta page pour que le blob s'affiche :
+<pre>&lsaquo;div id="bubble"&rsaquo;
+    &lsaquo;div class="bubble_top"&rsaquo;&lsaquo;/div&rsaquo;
+    &lsaquo;div class="bubble_middle"&rsaquo;&lsaquo;/div&rsaquo;
+    &lsaquo;div class="bubble_bottom"&rsaquo;&lsaquo;/div&rsaquo;
+&lsaquo;/div&rsaquo;
+&lsaquo;div id="blob"&rsaquo;&lsaquo;/div&rsaquo;</pre>
+C'est globalement simple à utiliser quand on a des notions de javascript, il y a 6 fonctions :
+</p>
+
+<ul>
+<li>blob.play() : initialise le blob, il faut l'appeler au départ</li>
+<li>blob.death() : tue le blob</li>
+<li>blob.raise() : réanime le blob après une mort</li>
+<li>blob.move(x,y) : déplace le blob au point xy</li>
+<li>blob.say(text) : fait dire le contenue de la variable text au blob</li>
+<li>blob.go_home() : renvoie le blob à son point de départ</li>
+</ul>
+
+<p>Tu n'as plus qu'à associer ces fonctions à des boutons ou à des liens et hop ça bougera. Tu peux regarder le code dans la page d'accueil de greenbrian, ça fait un bon exemple.</p>
+
+<p>Par contre le script qui génère les phrases du blob est tellement buggé que je ne te le donne pas ^^. Il ne fonctionne pas comme il faut et plante sans arrêt. Il était basé sur Alice bot, si ça t'intéresse d'essayer d'en faire un, y a plein d'infos sur Google.</p>
+
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+			<div class="comment" id="Naritaya2010-07-26T10:52:49">
+				<div class="count">
+					<a href="index.html#Naritaya2010-07-26T10:52:49">6</a>
+				</div>
+				<div class="box">
+					<div class="box_comment">
+						<div class="message">
+							<p>Arf, j'aurais bien aimer avoir la base des paroles aussi. Mais merci je regarderais pour en faire une. J'essaye de faire apparaitre Blob et je te tiens au courant ;)</p>
+						</div>
+						<div class="meta">
+							<b>
+								<a href="http://naritaya.org/">Naritaya</a>
+							</b>
+							à 10h52
+							le 26/07/2010
+						</div>
+					</div>
+					
+					<div class="box_reply">
+						<div class="author">
+							Réponse de <b>plop</b> :
+						</div>
+						<div class="reply">
+							<p>Le dictionnaire qui contient toutes les paroles est trouvable sur le net, j'essaierai de voir si je peux le retrouver. Le script qui choisit les réponses a été aussi trouvé sur le net, si je me souviens bien il était disponible dans plusieurs langages (genre python, php, perl etc.)</p>
+<p>On a tellement bricolé celui qui est sur notre site qu'il marche super mal maintenant. Vaut mieux que tu utilise un neuf ^^</p>
+						</div>
+					</div>
+					
+					<div class="box_reply">
+						<div class="author">
+							Réponse de <b>plop</b> :
+						</div>
+						<div class="reply">
+							<p>Après 2-3 recherches, je pense que tout ce qu'on a utilisé est sur le site officiel de alicebot : <a href="http://www.alicebot.org/downloads/sets.html">les sets</a> (= les dictionnaires) et <a href="http://www.alicebot.org/downloads/programs.html">les scripts pour lire les sets</a>.</p>
+<p>Bon courage ! ;)</p>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+			<div class="comment" id="Naritaya2010-07-26T14:09:45">
+				<div class="count">
+					<a href="index.html#Naritaya2010-07-26T14:09:45">7</a>
+				</div>
+				<div class="box">
+					<div class="box_comment">
+						<div class="message">
+							<p>Merci Plop :P</p>
+						</div>
+						<div class="meta">
+							<b>
+								<a href="http://naritaya.org/">Naritaya</a>
+							</b>
+							à 14h09
+							le 26/07/2010
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+		
+		
+		
+			<h3 id="addcomment" class="icon_comment_edit">Ajouter un commentaire</h3>
+		
+		<form action="#addcomment" method="post" class="comment_forms">
+			
+				<div class="form">
+					
+					<label for="id_author">Nom ou pseudo :</label> <input id="id_author" type="text" name="author" maxlength="50" />
+				</div>
+    		
+				<div class="form">
+					
+					<label for="id_email">Email :</label> <input id="id_email" type="text" name="email" maxlength="75" />
+				</div>
+    		
+				<div class="form">
+					
+					<label for="id_url">Site internet :</label> <input id="id_url" type="text" name="url" maxlength="200" />
+				</div>
+    		
+				<div class="form">
+					
+					<label for="id_content">Message :</label> <textarea id="id_content" rows="10" cols="40" name="content"></textarea>
+				</div>
+    		
+		<p style="display: none;">
+			<label for="id_age">Si vous soumettez quelque chose dans ce champs votre commentaire va être considéré comme étant indésirable</label>
+			<input id="id_age" type="text" name="age"/>
+		</p>
+		<p style="font-size: 90%; color: #888888; text-align: center;">Le code HTML est affiché comme du texte et les adresses web sont automatiquement transformées.</p>
+		<p><input type="submit" value="Envoyer" class="submit"/></p>
+		</form>
+	
+
+			</div>
+			<div class="nav_pages">
+				
+	
+		<div class="arrow next_none"></div>
+	
+
+	
+		<div class="arrow previous_none"></div>
+	
+	
+	<a href="../../../../index-2.html" class="arrow home" onfocus="this.blur()"></a>
+
+
+			</div>
+		</div>
+		<div class="footer">
+			
+			
+		</div>
+		<div class="menu">
+			
+	<div class="glossymenu">
+		<a class="menuitem" href="../../../../index-2.html" onfocus="this.blur()"><span class="icon_house">Accueil</span></a>
+		
+		<a class="menuitem submenuheader" href="#" onfocus="this.blur()"><span class="icon_heart">Liens</span></a>
+		<div class="submenu text">
+			
+				<ul>
+				
+					<!--<li style="height:50px;background-image:url(/links/aly2_.png);">
+						<a
+							href="http://blogaaly.blogspot.com/"
+							onmouseover="fadeOutImage(this)"
+							onmouseout="fadeInImage(this)"
+						>
+							<img src="/links/aly2.png" class="link1" alt="Aly"/>
+						</a>
+					</li>-->
+					<li><a href="http://blogaaly.blogspot.com/">Aly</a></li>
+				
+					<!--<li style="height:50px;background-image:url(/links/vide_____________.png);">
+						<a
+							href="http://bouletcorp.com/"
+							onmouseover="fadeOutImage(this)"
+							onmouseout="fadeInImage(this)"
+						>
+							<img src="/links/vide____________.png" class="link2" alt="Boulet"/>
+						</a>
+					</li>-->
+					<li><a href="http://bouletcorp.com/">Boulet</a></li>
+				
+					<!--<li style="height:50px;background-image:url(/links/vide_.png);">
+						<a
+							href="http://krevettestrip.blogspot.com/"
+							onmouseover="fadeOutImage(this)"
+							onmouseout="fadeInImage(this)"
+						>
+							<img src="/links/vide.png" class="link3" alt="Florian70"/>
+						</a>
+					</li>-->
+					<li><a href="http://krevettestrip.blogspot.com/">Florian70</a></li>
+				
+					<!--<li style="height:50px;background-image:url(/links/vide___.png);">
+						<a
+							href="http://www.ptitenezu.blogspot.com/"
+							onmouseover="fadeOutImage(this)"
+							onmouseout="fadeInImage(this)"
+						>
+							<img src="/links/vide__.png" class="link4" alt="Juju"/>
+						</a>
+					</li>-->
+					<li><a href="http://www.ptitenezu.blogspot.com/">Juju</a></li>
+				
+					<!--<li style="height:50px;background-image:url(/links/vide_______.png);">
+						<a
+							href="http://laviedeprepa.canalblog.com/"
+							onmouseover="fadeOutImage(this)"
+							onmouseout="fadeInImage(this)"
+						>
+							<img src="/links/vide______.png" class="link5" alt="La vie d&#39;étudiant"/>
+						</a>
+					</li>-->
+					<li><a href="http://laviedeprepa.canalblog.com/">La vie d&#39;étudiant</a></li>
+				
+					<!--<li style="height:50px;background-image:url(/links/vide_________.png);">
+						<a
+							href="http://www.leszillusdemissbean.com/le-blog/index.php"
+							onmouseover="fadeOutImage(this)"
+							onmouseout="fadeInImage(this)"
+						>
+							<img src="/links/vide________.png" class="link6" alt="Missbean"/>
+						</a>
+					</li>-->
+					<li><a href="http://www.leszillusdemissbean.com/le-blog/index.php">Missbean</a></li>
+				
+					<!--<li style="height:50px;background-image:url(/links/vide___________.png);">
+						<a
+							href="http://yap-yap-yap-yap.blogspot.com/"
+							onmouseover="fadeOutImage(this)"
+							onmouseout="fadeInImage(this)"
+						>
+							<img src="/links/vide__________.png" class="link7" alt="Pierrot"/>
+						</a>
+					</li>-->
+					<li><a href="http://yap-yap-yap-yap.blogspot.com/">Pierrot</a></li>
+				
+					<!--<li style="height:50px;background-image:url(/links/rag2.png);">
+						<a
+							href="http://ragondin-blog.com/"
+							onmouseover="fadeOutImage(this)"
+							onmouseout="fadeInImage(this)"
+						>
+							<img src="/links/rag1.png" class="link8" alt="Ragondin"/>
+						</a>
+					</li>-->
+					<li><a href="http://ragondin-blog.com/">Ragondin</a></li>
+				
+					<!--<li style="height:50px;background-image:url(/links/vide_____.png);">
+						<a
+							href="http://romaq.canalblog.com/"
+							onmouseover="fadeOutImage(this)"
+							onmouseout="fadeInImage(this)"
+						>
+							<img src="/links/vide____.png" class="link9" alt="Romaq"/>
+						</a>
+					</li>-->
+					<li><a href="http://romaq.canalblog.com/">Romaq</a></li>
+				
+					<!--<li style="height:50px;background-image:url(/links/vide_______________.png);">
+						<a
+							href="http://setoan.blogspot.com/"
+							onmouseover="fadeOutImage(this)"
+							onmouseout="fadeInImage(this)"
+						>
+							<img src="/links/vide______________.png" class="link10" alt="Setoan"/>
+						</a>
+					</li>-->
+					<li><a href="http://setoan.blogspot.com/">Setoan</a></li>
+				
+				</ul>
+			
+		</div>	
+		<a class="menuitem submenuheader" href="#" onfocus="this.blur()"><span class="icon_folder">Archives</span></a>
+		<div class="submenu text">
+			
+				<ul>
+				
+					<li><a href="../../../2/index.html">Février 2009</a></li>
+				
+					<li><a href="../../../3/index.html">Mars 2009</a></li>
+				
+					<li><a href="../../../4/index.html">Avril 2009</a></li>
+				
+					<li><a href="../../../6/index.html">Juin 2009</a></li>
+				
+					<li><a href="../../../7/index.html">Juillet 2009</a></li>
+				
+					<li><a href="../../../9/index.html">Septembre 2009</a></li>
+				
+					<li><a href="../../index.html">Décembre 2009</a></li>
+				
+					<li><a href="../../../../2010/10/index.html">Octobre 2010</a></li>
+				
+					<li><a href="../../../../2010/11/index.html">Novembre 2010</a></li>
+				
+					<li><a href="../../../../archives/index.html">Toutes les archives</a></li>
+				</ul>
+			
+		</div>	
+		<a class="menuitem submenuheader" href="#" onfocus="this.blur()"><span class="icon_pictures">Catégories</span></a>
+		<div class="submenu text">
+			
+				<ul>
+				
+					<li><a href="../../../../cat/3615-mylife/index.html">3615 Mylife</a></li>
+				
+					<li><a href="../../../../cat/screenshot/index.html">Screenshot</a></li>
+				
+					<li><a href="../../../../cat/jeux-videos/index.html">Jeux vidéo</a></li>
+				
+					<li><a href="../../../../cat/sans-categorie/index.html">Sans catégorie</a></li>
+				
+				</ul>
+			
+		</div>
+		<a class="menuitem submenuheader" href="#" onfocus="this.blur()"><span class="icon_feed">Syndication</span></a>
+		<div class="submenu text">
+			<ul>
+			<li><a href="../../../../feeds/rss/index.html">Fil rss</a></li>
+			<li><a href="../../../../feeds/rsscomments/index.html">Fil rss commentaires</a></li>
+			<li><a href="../../../../feeds/atom/index.html">Fil atom</a></li>
+			<li><a href="../../../../feeds/atomcomments/index.html">Fil atom commentaires</a></li>
+			</ul>
+		</div>
+		<a class="menuitem" href="../../../../about/index.html" onfocus="this.blur()"><span class="icon_information">À propos</span></a>
+	</div>
+
+		</div>
+	</div>
+	<script type="text/javascript">
+		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+		document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+		try {
+		var pageTracker = _gat._getTracker("UA-2508341-5");
+		pageTracker._trackPageview();
+		} catch(err) {}
+	</script>
+	</body>
+
+<!-- Mirrored from plopounet.net/2009/12/26/programmers-who-say-py/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 01 May 2017 10:44:04 GMT -->
+</html>
+

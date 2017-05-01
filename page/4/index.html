@@ -1,0 +1,510 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+	
+<!-- Mirrored from plopounet.net/page/4/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 01 May 2017 10:44:34 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+		<title>Le blog BD de plop</title>
+		<meta name="keywords" lang="fr" content="plop, plopounet, BD, blog, dessin, illustration, geek, libre, pingus, django, python" />
+		<meta name="description" content="Le blog BD de plop, un tas de dessins stupides et d'histoires de geek. Le tout libre de droit !" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="Content-Language" content="fr" />
+		<meta http-equiv="Content-Script-Type" content="text/javascript" />
+		<link href="../../design/style.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="../../accordion/design_accord/accord.css" />
+		<link rel="stylesheet" type="text/css" href="../../lightbox/css/jquery.lightbox-0.5.css" media="screen" />
+		<link rel="shortcut icon" href="../../pingus/wait.gif" />
+		<link rel="alternate" type="application/atom+xml" title="Le blog BD de plop - Atom" href="../../feeds/atom/index.html" />
+		<link rel="alternate" type="application/rss+xml" title="Le blog BD de plop - RSS" href="../../feeds/rss/index.html" />
+		<script type="text/javascript" src="../../accordion/js/prototype.html"></script>
+		<script type="text/javascript" src="../../accordion/ddaccordion.js"></script>
+		<script type="text/javascript" src="../../jquery-1.3.1.min.js"></script>
+		<script type="text/javascript" src="../../preloadImages.js"></script>
+		<script type="text/javascript" src="../../pingus/jquery.timer.js"></script>
+		<script type="text/javascript" src="../../pingus/jquery.sound.js"></script>
+		<script type="text/javascript" src="../../pingus/pingus.js"></script>
+	<!-- NON LIBRE -->
+		<script type="text/javascript" src="../../lightbox/js/jquery.lightbox-0.5.min.js"></script>
+	<!-- FIN NON LIBRE -->
+		<script type="text/javascript">
+				
+		ddaccordion.init({
+			headerclass: "submenuheader", //Shared CSS class name of headers group
+			contentclass: "submenu", //Shared CSS class name of contents group
+			revealtype: "click", //Reveal content when user clicks or onmouseover the header? Valid value: "click" or "mouseover
+			collapseprev: true, //Collapse previous content (so only one open at any time)? true/false 
+			defaultexpanded: [], //index of content(s) open by default [index1, index2, etc] [] denotes no content
+			animatedefault: false, //Should contents open by default be animated into view?
+			persiststate: true, //persist state of opened contents within browser session?
+			toggleclass: ["", ""], //Two CSS classes to be applied to the header when it's collapsed and expanded, respectively ["class1", "class2"]
+			togglehtml: [
+				"suffix", 
+				"../../accordion/design_accord/plus.png", 
+				"../../accordion/design_accord/minus.png"
+			], 
+			animatespeed: "normal", //speed of animation: "fast", "normal", or "slow"
+			oninit:function(headers, expandedindices){ //custom code to run when headers have initalized
+				//do nothing
+			},
+			onopenclose:function(header, index, state, isuseractivated){ //custom code to run whenever a header is opened or closed
+				//do nothing
+			}
+		});
+		
+		function fadeOutImage() 
+		{
+			$(fadeOutImage.arguments[0]).fadeTo(200, 0);
+		};
+		
+		function fadeInImage() 
+		{
+			$(fadeInImage.arguments[0]).fadeTo(200, 1);
+		};
+		
+		$.preloadImages(
+			"../../accordion/design_accord/minus.png",
+			"../../accordion/design_accord/menuitem2.png",
+			"../../design/accueil_hover.png"
+		);
+
+		$(function() {
+			$('a.lightbox').lightBox({
+				imageLoading: '/lightbox/images/lightbox-ico-loading.gif',
+				imageBtnClose: '/lightbox/images/lightbox-btn-close.gif',
+				imageBtnPrev: '/lightbox/images/lightbox-btn-prev.gif',
+				imageBtnNext: '/lightbox/images/lightbox-btn-next.gif'
+			});
+		});
+
+		pingus.play({
+    		id: "pingus",		// Id of the div where pingus will live
+    		limit_left: 20,		// Where pingus starts, in pixels (0 means pingus starts at the beginning of its parent div)
+    		limit_right: 490,	// Where pingus turns back, in pixels
+    		sound_enabled: true,// Enable sounds (true/false)
+    		url_media: "http://plopounet.alwaysdata.net/pingus/"		// url of the pingus directory (DON'T FORGET THE TRAILING SLASH)
+		});
+		</script>
+
+	</head>
+	<body>
+	<div class="body">
+		<div class="banner">
+			
+	
+		<a href="../../index-2.html">
+			<img src="../../banner/banniere-cacavolant_.png" alt="Le blog BD de plop"/>
+		</a>
+	
+
+		</div>
+		<div class="random_image">
+			
+	
+		<div class="image">
+			<img src="../../random_image/ff1.png" alt="Firefox" />
+		</div>
+		
+		<div class="box">
+			<div class="inbox">
+				
+					<h4
+					
+						class="text_align_left"
+					
+					
+					
+					>
+					<a href="http://fr.wikipedia.org/wiki/Firefox#Les_diff.C3.A9rents_noms_du_logiciel">
+					<span class="icon_comment">Firefox</span> 
+					</a>
+					dit :</h4>
+					
+						<div class="blank"></div>
+					
+				
+				
+					<p>Pourquoi tout le monde me traite de renard alors qu'en réalité je suis un panda roux ?</p>
+				
+			</div>
+		</div>
+		<div class="bas"></div>
+		
+	
+
+		</div>
+		<div class="header">
+			<div id="pingus"></div>
+		</div>
+		<div class="blank"></div>
+		<div class="middle">
+			<div class="content">
+				
+	
+		
+			
+				<h2 id="on-rigole-pas-avec-la-securite"><a href="../../2009/2/27/on-rigole-pas-avec-la-securite/index.html"><span class="icon_monitor">On rigole pas avec la sécurité !</span></a>
+				
+					<span class="category">dans la catégorie <a href="../../cat/screenshot/index.html">Screenshot</a></span>
+				
+				</h2>
+				<div class="meta">
+					<table>
+					<tr>
+						<td><span class="icon_status_online">plop</span></td>
+						<td><span class="icon_date">27/02/2009</span></td>
+						<td><span class="icon_time">10h00 </span></td>
+					</tr>
+					</table>				
+				</div>
+				<div class="text">
+				<p><a href="../../img/2009/02/27/090227024254581273223495.png"><img alt="Hotmail il gère la fougère" src="../../img/2009/02/27/090227022052581273223478.png"/></a></p>
+<br/>
+<p>Pour ceux qui ne l'auront pas remarqué, ce screenshot a été pris sur le site de Hotmail (cliquez pour le voir en entier). Oui, Microsoft bloque ses propres emails par mesure de sécurité. C'est pour la bonne cause, faudrait pas non plus que ça soit facile d'arrêter de recevoir de la pub :D</p>
+<p>D'ailleurs ce soir j'ai remarqué que les emails que j'envoie depuis l'adresse plopounet@alwaysdata.net (l'adresse utilisée pour les emails automatiques qui vous préviennent que j'ai répondu à un de vos commentaires) sont bloqués par Hotmail si ils contiennent un lien :D<br/>
+C'est ballot. Donc pas de lien vers mon blog à l'intérieur ^^</p>
+<p>Allez, demain j'ajoute le profil et la page "à propos". Et si j'ai le temps je ferai même une note.</p>
+<p>PS : Vous avez vu que cet article a été posté à 10h00 ? Nooooon je ne suis pas levé si tôt :D<br/>C'était juste pour montrer que mon blog sait aussi poster les articles tout seul (ouais j'aime bien vanter les mérites de mon blog).</p>
+				</div>
+				<div class="comments">
+					<span class="icon_comment"><a href="../../2009/2/27/on-rigole-pas-avec-la-securite/index.html#comments">1 gloussements de fans</a></span>
+				</div>
+				
+					<div class="blank"></div>
+				
+			
+		
+			
+				<h2 id="mon-repertoire"><a href="../../2009/2/26/mon-repertoire/index.html"><span class="icon_page_white_edit">Mon répertoire</span></a>
+				
+					<span class="category">dans la catégorie <a href="../../cat/3615-mylife/index.html">3615 Mylife</a></span>
+				
+				</h2>
+				<div class="meta">
+					<table>
+					<tr>
+						<td><span class="icon_status_online">plop</span></td>
+						<td><span class="icon_date">26/02/2009</span></td>
+						<td><span class="icon_time">20h11 </span></td>
+					</tr>
+					</table>				
+				</div>
+				<div class="text">
+				<p style="text-align:center;"><img alt="Mon répertoire" src="../../img/2009/02/26/090226081550581273221931.png"/></p>
+
+<p>PS : Maintenant, les commentateurs recoivent un email quand je réponds à un de leur commentaire. C'est une fonctionnalité désactivable, mais comme je suis un tyran, je vous laisse pas le choix :D</p>
+				</div>
+				<div class="comments">
+					<span class="icon_comment"><a href="../../2009/2/26/mon-repertoire/index.html#comments">9 machins</a></span>
+				</div>
+				
+					<div class="blank"></div>
+				
+			
+		
+			
+				<h2 id="y-en-qui-en-ont-une-grosse"><a href="../../2009/2/24/y-en-qui-en-ont-une-grosse/index.html"><span class="icon_monitor">Y en a qui en ont une grosse</span></a>
+				
+					<span class="category">dans la catégorie <a href="../../cat/screenshot/index.html">Screenshot</a></span>
+				
+				</h2>
+				<div class="meta">
+					<table>
+					<tr>
+						<td><span class="icon_status_online">plop</span></td>
+						<td><span class="icon_date">24/02/2009</span></td>
+						<td><span class="icon_time">14h04 </span></td>
+					</tr>
+					</table>				
+				</div>
+				<div class="text">
+				<p>Moi j'en ai une énorme. Corbeille.</p>
+<br/>
+<br/>
+<img alt="Ma grosse corbeille" src="../../img/2009/02/24/090224020913581273207800.png"/>
+				</div>
+				<div class="comments">
+					<span class="icon_comment"><a href="../../2009/2/24/y-en-qui-en-ont-une-grosse/index.html#comments">6 remarques pénibles sorties par des casse-couilles</a></span>
+				</div>
+				
+					<div class="blank"></div>
+				
+			
+		
+			
+				<h2 id="le-retour-du-roi"><a href="../../2009/2/23/le-retour-du-roi/index.html"><span class="icon_page_white_edit">Le retour du Roi</span></a>
+				
+					<span class="category">dans la catégorie <a href="../../cat/3615-mylife/index.html">3615 Mylife</a></span>
+				
+				</h2>
+				<div class="meta">
+					<table>
+					<tr>
+						<td><span class="icon_status_online">plop</span></td>
+						<td><span class="icon_date">23/02/2009</span></td>
+						<td><span class="icon_time">20h59 </span></td>
+					</tr>
+					</table>				
+				</div>
+				<div class="text">
+				<p style="text-align: center;"><img alt="Le retour du roi" src="../../img/2009/02/23/090223082153581273204001.png"/></p>
+<p><span style="font-size: 18px;">Ca y est ! Enfin ! Le blog est fini !</span><br/>
+(enfin non, mais on va faire comme si)</p>
+<p>Bon alors je vais faire les présentations : lecteur, voici blop ; blop, voici lecteur (j'ai trouvé ça mignon "blop" pour le "blog de plop" :D)</p>
+<p><b>Voici la liste des choses que blop sait faire :</b><br/>
+<ul>
+<li>Afficher une bannière aléatoirement (parmi une liste que je gère depuis mon interface administrateur, comme tout ce qui suit biensûr)</li>
+<li>Afficher une image aléatoire avec une légende (ou bien juste la légende, avec ou sans nom, avec ou sans lien, avec une icone, ou bien sans légende)</li>
+<li>Afficher un manchot qui se promène et qui explose quand on clique dessus (trop class ça hein ?)</li>
+<li>Danser la tecktonik grâce à son menu tip-top stylz (le seul truc dont j'ai fait le design mais que je n'ai pas programmé)</li>
+<li>Gérer des liens tout beaux, des catégories, des archives, des flux rss et atom pour les articles et les commentaires</li>
+<li>Afficher des articles (haha)</li>
+<li>Afficher une phrase aléatoire à la place du vieux "0 commentaires"</li>
+<li>Gérer les commentaires (même que quand tu entres l'adresse de ton blog, si tu mets un adresse correcte, mais qui existe pas, il te prévient !)</li>
+<li>Gérer les réponses aux commentaires. Chaque auteur peut répondre une ou plusieurs fois à chaque commentaire (bon pour l'instant y a qu'un auteur hein)</li>
+<li>Afficher seulement 5 articles par pages et mettre un système de pages pour voir les suivantes</li>
+<li>Générer un sitemap dynamique</li>
+</ul>
+</p>
+
+<p><b>Ce que blop ne sait pas faire, mais que je compte ajouter :</b><br/>
+<ul>
+<li>Un igloo pour le manchot</li>
+<li>Une page de profil</li>
+<li>Une page de à propos</li>
+<li>Un deuxième blog pour mettre des trucs de geek (les codes sources, de la doc, des explications etc.)</li>
+<li>Des tags pour les articles</li>
+<li>Un système de préview avant de poster les articles de blog (ouais c'est encore la préhistoire de ce coté là :P)</li>
+<li>Un système de galerie d'images</li>
+<li>Un applet java qui permettra aux lecteurs de dessiner directement sur mon blog</li>
+<li>Un laser géant</li>
+<li>Un système de géolocalisation des adresses IP (pour pouvoir utiliser le laser géant sur les gens qui ne sont pas assez gentils à mon goût)</li>
+<li>... d'autres trucs que j'ai oublié</li>
+</ul>
+</p>
+<p>SI quelqu'un a des idées, des propositions, des sous à me donner pour que je lui fasse un blog ou quoi que ce soit d'autre... ben postez un commentaire. Allez ça suffit, assez de blabla pour ce soir.</li>
+<p>Maintenant je m'y remets sérieusement et je poste au moins trois fois par semaine !</p>
+
+				</div>
+				<div class="comments">
+					<span class="icon_comment"><a href="../../2009/2/23/le-retour-du-roi/index.html#comments">7 dépôts de plainte</a></span>
+				</div>
+				
+			
+		
+	
+
+			</div>
+			<div class="nav_pages">
+				
+	
+		<a href="../3/index.html" class="arrow next" onfocus="this.blur()"></a>
+	
+
+	
+		<div class="arrow previous_none"></div>
+	
+	
+	<a href="../../index-2.html" class="arrow home" onfocus="this.blur()"></a>
+
+
+			</div>
+		</div>
+		<div class="footer">
+			
+			
+		</div>
+		<div class="menu">
+			
+	<div class="glossymenu">
+		<a class="menuitem" href="../../index-2.html" onfocus="this.blur()"><span class="icon_house">Accueil</span></a>
+		
+		<a class="menuitem submenuheader" href="#" onfocus="this.blur()"><span class="icon_heart">Liens</span></a>
+		<div class="submenu text">
+			
+				<ul>
+				
+					<!--<li style="height:50px;background-image:url(/links/aly2_.png);">
+						<a
+							href="http://blogaaly.blogspot.com/"
+							onmouseover="fadeOutImage(this)"
+							onmouseout="fadeInImage(this)"
+						>
+							<img src="/links/aly2.png" class="link1" alt="Aly"/>
+						</a>
+					</li>-->
+					<li><a href="http://blogaaly.blogspot.com/">Aly</a></li>
+				
+					<!--<li style="height:50px;background-image:url(/links/vide_____________.png);">
+						<a
+							href="http://bouletcorp.com/"
+							onmouseover="fadeOutImage(this)"
+							onmouseout="fadeInImage(this)"
+						>
+							<img src="/links/vide____________.png" class="link2" alt="Boulet"/>
+						</a>
+					</li>-->
+					<li><a href="http://bouletcorp.com/">Boulet</a></li>
+				
+					<!--<li style="height:50px;background-image:url(/links/vide_.png);">
+						<a
+							href="http://krevettestrip.blogspot.com/"
+							onmouseover="fadeOutImage(this)"
+							onmouseout="fadeInImage(this)"
+						>
+							<img src="/links/vide.png" class="link3" alt="Florian70"/>
+						</a>
+					</li>-->
+					<li><a href="http://krevettestrip.blogspot.com/">Florian70</a></li>
+				
+					<!--<li style="height:50px;background-image:url(/links/vide___.png);">
+						<a
+							href="http://www.ptitenezu.blogspot.com/"
+							onmouseover="fadeOutImage(this)"
+							onmouseout="fadeInImage(this)"
+						>
+							<img src="/links/vide__.png" class="link4" alt="Juju"/>
+						</a>
+					</li>-->
+					<li><a href="http://www.ptitenezu.blogspot.com/">Juju</a></li>
+				
+					<!--<li style="height:50px;background-image:url(/links/vide_______.png);">
+						<a
+							href="http://laviedeprepa.canalblog.com/"
+							onmouseover="fadeOutImage(this)"
+							onmouseout="fadeInImage(this)"
+						>
+							<img src="/links/vide______.png" class="link5" alt="La vie d&#39;étudiant"/>
+						</a>
+					</li>-->
+					<li><a href="http://laviedeprepa.canalblog.com/">La vie d&#39;étudiant</a></li>
+				
+					<!--<li style="height:50px;background-image:url(/links/vide_________.png);">
+						<a
+							href="http://www.leszillusdemissbean.com/le-blog/index.php"
+							onmouseover="fadeOutImage(this)"
+							onmouseout="fadeInImage(this)"
+						>
+							<img src="/links/vide________.png" class="link6" alt="Missbean"/>
+						</a>
+					</li>-->
+					<li><a href="http://www.leszillusdemissbean.com/le-blog/index.php">Missbean</a></li>
+				
+					<!--<li style="height:50px;background-image:url(/links/vide___________.png);">
+						<a
+							href="http://yap-yap-yap-yap.blogspot.com/"
+							onmouseover="fadeOutImage(this)"
+							onmouseout="fadeInImage(this)"
+						>
+							<img src="/links/vide__________.png" class="link7" alt="Pierrot"/>
+						</a>
+					</li>-->
+					<li><a href="http://yap-yap-yap-yap.blogspot.com/">Pierrot</a></li>
+				
+					<!--<li style="height:50px;background-image:url(/links/rag2.png);">
+						<a
+							href="http://ragondin-blog.com/"
+							onmouseover="fadeOutImage(this)"
+							onmouseout="fadeInImage(this)"
+						>
+							<img src="/links/rag1.png" class="link8" alt="Ragondin"/>
+						</a>
+					</li>-->
+					<li><a href="http://ragondin-blog.com/">Ragondin</a></li>
+				
+					<!--<li style="height:50px;background-image:url(/links/vide_____.png);">
+						<a
+							href="http://romaq.canalblog.com/"
+							onmouseover="fadeOutImage(this)"
+							onmouseout="fadeInImage(this)"
+						>
+							<img src="/links/vide____.png" class="link9" alt="Romaq"/>
+						</a>
+					</li>-->
+					<li><a href="http://romaq.canalblog.com/">Romaq</a></li>
+				
+					<!--<li style="height:50px;background-image:url(/links/vide_______________.png);">
+						<a
+							href="http://setoan.blogspot.com/"
+							onmouseover="fadeOutImage(this)"
+							onmouseout="fadeInImage(this)"
+						>
+							<img src="/links/vide______________.png" class="link10" alt="Setoan"/>
+						</a>
+					</li>-->
+					<li><a href="http://setoan.blogspot.com/">Setoan</a></li>
+				
+				</ul>
+			
+		</div>	
+		<a class="menuitem submenuheader" href="#" onfocus="this.blur()"><span class="icon_folder">Archives</span></a>
+		<div class="submenu text">
+			
+				<ul>
+				
+					<li><a href="../../2009/2/index.html">Février 2009</a></li>
+				
+					<li><a href="../../2009/3/index.html">Mars 2009</a></li>
+				
+					<li><a href="../../2009/4/index.html">Avril 2009</a></li>
+				
+					<li><a href="../../2009/6/index.html">Juin 2009</a></li>
+				
+					<li><a href="../../2009/7/index.html">Juillet 2009</a></li>
+				
+					<li><a href="../../2009/9/index.html">Septembre 2009</a></li>
+				
+					<li><a href="../../2009/12/index.html">Décembre 2009</a></li>
+				
+					<li><a href="../../2010/10/index.html">Octobre 2010</a></li>
+				
+					<li><a href="../../2010/11/index.html">Novembre 2010</a></li>
+				
+					<li><a href="../../archives/index.html">Toutes les archives</a></li>
+				</ul>
+			
+		</div>	
+		<a class="menuitem submenuheader" href="#" onfocus="this.blur()"><span class="icon_pictures">Catégories</span></a>
+		<div class="submenu text">
+			
+				<ul>
+				
+					<li><a href="../../cat/3615-mylife/index.html">3615 Mylife</a></li>
+				
+					<li><a href="../../cat/screenshot/index.html">Screenshot</a></li>
+				
+					<li><a href="../../cat/jeux-videos/index.html">Jeux vidéo</a></li>
+				
+					<li><a href="../../cat/sans-categorie/index.html">Sans catégorie</a></li>
+				
+				</ul>
+			
+		</div>
+		<a class="menuitem submenuheader" href="#" onfocus="this.blur()"><span class="icon_feed">Syndication</span></a>
+		<div class="submenu text">
+			<ul>
+			<li><a href="../../feeds/rss/index.html">Fil rss</a></li>
+			<li><a href="../../feeds/rsscomments/index.html">Fil rss commentaires</a></li>
+			<li><a href="../../feeds/atom/index.html">Fil atom</a></li>
+			<li><a href="../../feeds/atomcomments/index.html">Fil atom commentaires</a></li>
+			</ul>
+		</div>
+		<a class="menuitem" href="../../about/index.html" onfocus="this.blur()"><span class="icon_information">À propos</span></a>
+	</div>
+
+		</div>
+	</div>
+	<script type="text/javascript">
+		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+		document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+		try {
+		var pageTracker = _gat._getTracker("UA-2508341-5");
+		pageTracker._trackPageview();
+		} catch(err) {}
+	</script>
+	</body>
+
+<!-- Mirrored from plopounet.net/page/4/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 01 May 2017 10:44:34 GMT -->
+</html>
+

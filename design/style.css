@@ -1,0 +1,551 @@
+
+body
+{
+	background-color: #FFF;
+	font-family: Verdana,"DejaVu sans",Helvetica,sans-serif;
+	font-size:12px;
+	color: #333333;
+}
+
+a img
+{
+	border: none;
+}
+
+a, 
+a:visited,
+a:active
+{
+	text-decoration: none;
+	color: #666666;
+}
+
+a:hover
+{
+	text-decoration: none;
+	color: #333333;
+}
+
+.body
+{
+	position: absolute;
+	left:-450px;
+	width: 900px;
+	margin-left: 50%;
+}
+
+.body .middle .content .text a, 
+.body .middle .content .text a:visited,
+.body .middle .content .text a:active
+{
+	text-decoration: underline;
+}
+
+.body .middle .content .text a:hover
+{
+	text-decoration: none;
+}
+
+.banner
+{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 194px;
+	width: 530px;
+	z-index: 5;
+	overflow: hidden;
+}
+
+.random_image
+{
+	position: absolute;
+	top: 0px;
+	right: 70px;
+	width: 300px;
+	z-index: 15;
+}
+
+.random_image .image
+{
+	height: 170px;
+	text-align: center;
+}
+
+.random_image .image img
+{
+	max-width: 300px;
+	max-height: 170px;
+}
+
+
+.random_image .box
+{
+	background-image: url("random_image_fond.png");
+	max-height: 94px;
+	padding: 10px;
+	padding-bottom: 4px;
+}
+
+
+.random_image .inbox
+{
+	overflow: auto;
+	max-height: 80px;
+}
+
+.random_image .box .inbox h4
+{
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.random_image .box .inbox .blank
+{
+	height: 10px;
+}
+
+
+.random_image .box .inbox p
+{
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+}
+
+.random_image .bas
+{
+	background-image: url("random_image_fond_bas.png");
+	height: 6px;
+}
+
+.header
+{
+	position: absolute;
+	top : 186px;
+	height: 14px;
+	width: 740px;
+	background-image: url("fond_haut.png");
+	z-index: 10;
+	margin-bottom: 50px;
+}
+
+.header #pingus
+{
+	margin-top: 16px;
+	margin-left: 20px;
+	height: 32px;
+	width: 32px;
+	background-image:url("wait.gif");
+}
+
+.blank
+{
+	height: 200px;
+	margin: 0;
+	padding: 0;
+}
+
+.middle
+{
+	position: relative;
+	width: 680px;
+	padding-top: 50px;
+	padding-right: 60px;
+	background-image: url("fond.png");
+}
+
+.middle .content
+{
+	text-align: justify;
+	padding-left: 60px;
+	min-height: 400px;
+}
+
+.middle .content h2
+{
+	height: 32px;
+	margin: 0;
+	padding: 0;
+	padding-top: 8px;
+	padding-left: 10px;
+	font-weight:bold;
+	font-size: 18px;
+	font-variant:small-caps;
+	background-image: url("barre-titre2.png");
+	
+}
+
+.middle .content h2 .category
+{
+	font-size: 12px;
+	font-weight: normal;
+}
+
+.middle .content .text
+{
+	padding: 5px 15px;
+}
+
+.middle .content h3
+{
+	margin-top: 30px;
+}
+
+.middle .content .meta
+{
+
+}
+
+.middle .content .meta table
+{
+	border-collapse: collapse;
+	width: 300px;
+	margin-left: 280px;
+	border: 1px solid #959595;
+	border-top: none;
+}
+
+.middle .content .meta td
+{
+	margin: 0px;
+	text-align: center;
+	padding: 3px 10px;
+}
+
+.middle .content .comments
+{
+	text-align: center;
+	padding-top: 10px;
+}
+
+.middle .content .blank
+{
+	height: 100px;
+}
+
+.middle .nav_pages
+{
+	margin-top: 50px;
+	margin-left: 243px;
+	height: 53px;
+	width: 255px;
+	background-image: url("fond_nav_pages.png");
+}
+
+.middle .nav_pages .arrow 
+{
+	width: 77px;
+	height: 53px;
+}
+
+.middle .nav_pages .previous
+{
+	float: right;
+	background-image: url("precedent.png");
+}
+
+.middle .nav_pages .previous:hover
+{
+	background-image: url("precedent_hover.png");
+}
+
+.middle .nav_pages .previous_none
+{
+	float: right;
+	background-image: url("precedent_none.png");
+}
+
+.middle .nav_pages .next
+{
+	float: left;
+	background-image: url("suivant.png");
+}
+.middle .nav_pages .next:hover
+{
+	background-image: url("suivant_hover.png");
+}
+.middle .nav_pages .next_none
+{
+	float: left;
+	background-image: url("suivant_none.png");
+}
+
+.middle .nav_pages .home
+{
+	display: block;
+	margin-left: 89px;
+	background-image: url("accueil.png");
+}
+
+.middle .nav_pages .home:hover
+{
+	background-image: url("accueil_hover.png");
+}
+
+.footer
+{
+	height: 14px;
+	width: 740px;
+	background-image: url("fond_bas.png");
+	z-index: 10;
+	margin-bottom: 50px;
+}
+
+.middle .content .comment .count
+{
+	float: left;
+	font-weight: bold;
+	width : 30px;
+	height: 27px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	background-color: white;
+	border: 1px solid #bbbbbb;
+	text-align: center;
+	font-size: 20px;
+	color: #b1aba3;
+}
+
+.middle .content .comment .count a, 
+.middle .content .comment .count a:hover,
+.middle .content .comment .count a:visited
+{
+	color: #aaaaaa;
+	text-decoration: none;
+}
+
+.middle .content .comment .box
+{
+	margin-bottom: 15px;
+}
+
+.middle .content .comment .box_comment
+{
+	border-left: 2px solid #cccccc;
+	margin-left: 15px;
+	margin-bottom: 5px;
+	padding-left: 25px;
+	padding-top: 5px;
+}
+
+.middle .content .comment .box_reply
+{
+	border: 1px dotted #cccccc;
+	margin-left : 40px;
+	margin-bottom : 1px;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	padding-left: 5px;
+	background-color: #f6f6f6;
+}
+
+.middle .content .comment .author
+{
+	font-size: 90%;
+	color: #333333;
+	padding-bottom: 5px;
+}
+
+.middle .content .comment .reply
+{
+	padding-left: 10px;
+	padding-right: 15px;
+}
+	
+.middle .content .comment .meta
+{
+	padding-top: 5px;
+	font-size: 90%;
+}
+.middle .content .comment .message p
+{
+	margin-top: 3px;
+}
+
+.comment_forms
+{
+	border-left: 1px solid #cccccc;
+	border-right: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;
+}
+
+.comment_forms .submit
+{
+	margin-left: 15px;
+}
+
+.comment_forms .form 
+{
+	border-top: 1px solid #cccccc;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.comment_forms .form ul
+{
+	padding-left: 25px;
+}
+
+.comment_forms .form .errorlist li
+{
+	list-style-type: disc;
+}
+
+.comment_forms label 
+{
+	display: block;
+	float: left;
+	width: 130px;
+	padding-top: 2px;
+	font-weight: bold;
+	color: #333333;
+}
+
+.comment_forms input, .comment_forms textarea
+{
+	border: 1px solid #cccccc;
+}
+
+.comment_forms textarea
+{
+	width: 586px;
+}
+
+.comment_forms .form .errorlist
+{
+	background-color: #f5f5b5;
+	border: 1px solid #dab255;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin: 0px;
+	margin-bottom: 5px;
+}
+
+.menu
+{
+	border: none;
+	position: absolute;
+	top: 300px;
+	right: 0px;
+	height: 414px;
+	width: 214px;
+	z-index: 12;
+	background-image: url("gtk-window.png");
+}
+
+.text_align_center
+{
+	text-align: center;
+}
+
+.text_align_left
+{
+	text-align: left;
+}
+
+.text_align_right
+{
+	text-align: right;
+}
+
+.icon_house
+{
+	padding-left: 20px;
+	background: transparent url(icons/house.png) no-repeat scroll left center;
+}
+
+.icon_heart
+{
+	padding-left: 20px;
+	background: transparent url(icons/heart.png) no-repeat scroll left center;
+}
+
+.icon_folder
+{
+	padding-left: 20px;
+	background: transparent url(icons/folder.png) no-repeat scroll left center;
+}
+
+.icon_pictures
+{
+	padding-left: 20px;
+	background: transparent url(icons/pictures.png) no-repeat scroll left center;
+}
+
+.icon_feed
+{
+	padding-left: 20px;
+	background: transparent url(icons/feed.png) no-repeat scroll left center;
+	padding-bottom: 1px;
+	padding-top: 1px;
+}
+
+.icon_date
+{
+	padding-left: 20px;
+	background: transparent url(icons/date.png) no-repeat scroll left center;
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+
+.icon_time
+{
+	padding-left: 20px;
+	background: transparent url(icons/time.png) no-repeat scroll left center;
+}
+
+.icon_status_online
+{
+	padding-left: 20px;
+	background: transparent url(icons/status_online.png) no-repeat scroll left center;
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+
+.icon_comment
+{
+	padding-left: 20px;
+	background: transparent url(icons/comment.png) no-repeat scroll left center;
+}
+
+.icon_comment_edit
+{
+	padding-left: 20px;
+	background: transparent url(icons/comment_edit.png) no-repeat scroll left center;
+}
+
+.icon_monitor
+{
+	padding-left: 20px;
+	background: transparent url(icons/monitor.png) no-repeat scroll left center;
+}
+
+.icon_bullet_black
+{
+	padding-left: 20px;
+	background: transparent url(icons/bullet_black.png) no-repeat scroll left center;
+}
+
+.icon_page_white_edit
+{
+	padding-left: 20px;
+	background: transparent url(icons/page_white_edit.png) no-repeat scroll left center;
+	padding-bottom: 1px;
+}
+
+.icon_information
+{
+	padding-left: 20px;
+	background: transparent url(icons/information.png) no-repeat scroll left center;
+}
+
+.icon_joystick
+{
+	padding-left: 20px;
+	background: transparent url(icons/joystick.png) no-repeat scroll left center;
+}

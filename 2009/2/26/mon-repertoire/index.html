@@ -1,0 +1,663 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+	
+<!-- Mirrored from plopounet.net/2009/2/26/mon-repertoire/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 01 May 2017 10:44:26 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+		<title>Le blog BD de plop</title>
+		<meta name="keywords" lang="fr" content="plop, plopounet, BD, blog, dessin, illustration, geek, libre, pingus, django, python" />
+		<meta name="description" content="Le blog BD de plop, un tas de dessins stupides et d'histoires de geek. Le tout libre de droit !" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="Content-Language" content="fr" />
+		<meta http-equiv="Content-Script-Type" content="text/javascript" />
+		<link href="../../../../design/style.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="../../../../accordion/design_accord/accord.css" />
+		<link rel="stylesheet" type="text/css" href="../../../../lightbox/css/jquery.lightbox-0.5.css" media="screen" />
+		<link rel="shortcut icon" href="../../../../pingus/wait.gif" />
+		<link rel="alternate" type="application/atom+xml" title="Le blog BD de plop - Atom" href="../../../../feeds/atom/index.html" />
+		<link rel="alternate" type="application/rss+xml" title="Le blog BD de plop - RSS" href="../../../../feeds/rss/index.html" />
+		<script type="text/javascript" src="../../../../accordion/js/prototype.html"></script>
+		<script type="text/javascript" src="../../../../accordion/ddaccordion.js"></script>
+		<script type="text/javascript" src="../../../../jquery-1.3.1.min.js"></script>
+		<script type="text/javascript" src="../../../../preloadImages.js"></script>
+		<script type="text/javascript" src="../../../../pingus/jquery.timer.js"></script>
+		<script type="text/javascript" src="../../../../pingus/jquery.sound.js"></script>
+		<script type="text/javascript" src="../../../../pingus/pingus.js"></script>
+	<!-- NON LIBRE -->
+		<script type="text/javascript" src="../../../../lightbox/js/jquery.lightbox-0.5.min.js"></script>
+	<!-- FIN NON LIBRE -->
+		<script type="text/javascript">
+				
+		ddaccordion.init({
+			headerclass: "submenuheader", //Shared CSS class name of headers group
+			contentclass: "submenu", //Shared CSS class name of contents group
+			revealtype: "click", //Reveal content when user clicks or onmouseover the header? Valid value: "click" or "mouseover
+			collapseprev: true, //Collapse previous content (so only one open at any time)? true/false 
+			defaultexpanded: [], //index of content(s) open by default [index1, index2, etc] [] denotes no content
+			animatedefault: false, //Should contents open by default be animated into view?
+			persiststate: true, //persist state of opened contents within browser session?
+			toggleclass: ["", ""], //Two CSS classes to be applied to the header when it's collapsed and expanded, respectively ["class1", "class2"]
+			togglehtml: [
+				"suffix", 
+				"../../../../accordion/design_accord/plus.png", 
+				"../../../../accordion/design_accord/minus.png"
+			], 
+			animatespeed: "normal", //speed of animation: "fast", "normal", or "slow"
+			oninit:function(headers, expandedindices){ //custom code to run when headers have initalized
+				//do nothing
+			},
+			onopenclose:function(header, index, state, isuseractivated){ //custom code to run whenever a header is opened or closed
+				//do nothing
+			}
+		});
+		
+		function fadeOutImage() 
+		{
+			$(fadeOutImage.arguments[0]).fadeTo(200, 0);
+		};
+		
+		function fadeInImage() 
+		{
+			$(fadeInImage.arguments[0]).fadeTo(200, 1);
+		};
+		
+		$.preloadImages(
+			"../../../../accordion/design_accord/minus.png",
+			"../../../../accordion/design_accord/menuitem2.png",
+			"../../../../design/accueil_hover.png"
+		);
+
+		$(function() {
+			$('a.lightbox').lightBox({
+				imageLoading: '/lightbox/images/lightbox-ico-loading.gif',
+				imageBtnClose: '/lightbox/images/lightbox-btn-close.gif',
+				imageBtnPrev: '/lightbox/images/lightbox-btn-prev.gif',
+				imageBtnNext: '/lightbox/images/lightbox-btn-next.gif'
+			});
+		});
+
+		pingus.play({
+    		id: "pingus",		// Id of the div where pingus will live
+    		limit_left: 20,		// Where pingus starts, in pixels (0 means pingus starts at the beginning of its parent div)
+    		limit_right: 490,	// Where pingus turns back, in pixels
+    		sound_enabled: true,// Enable sounds (true/false)
+    		url_media: "http://plopounet.alwaysdata.net/pingus/"		// url of the pingus directory (DON'T FORGET THE TRAILING SLASH)
+		});
+		</script>
+
+	</head>
+	<body>
+	<div class="body">
+		<div class="banner">
+			
+	
+		<a href="../../../../index-2.html">
+			<img src="../../../../banner/banniere-geek_.png" alt="Le blog BD de plop"/>
+		</a>
+	
+
+		</div>
+		<div class="random_image">
+			
+	
+		<div class="image">
+			<img src="../../../../random_image/obama.png" alt="Obama" />
+		</div>
+		
+		<div class="box">
+			<div class="inbox">
+				
+					<h4
+					
+						class="text_align_left"
+					
+					
+					
+					>
+					
+					<span class="icon_comment">Obama</span> 
+					
+					dit :</h4>
+					
+						<div class="blank"></div>
+					
+				
+				
+					<p>Oui ! Ce blog peut le faire !</p>
+				
+			</div>
+		</div>
+		<div class="bas"></div>
+		
+	
+
+		</div>
+		<div class="header">
+			<div id="pingus"></div>
+		</div>
+		<div class="blank"></div>
+		<div class="middle">
+			<div class="content">
+				
+	
+		<h2 id="article"><a href="index.html"><span class="icon_page_white_edit">Mon répertoire</span></a>
+		
+			<span class="category">dans la catégorie <a href="../../../../cat/3615-mylife/index.html">3615 Mylife</a></span>
+		
+		</h2>
+		<div class="meta">
+			<table>
+			<tr>
+				<td><span class="icon_status_online">plop</span></td>
+				<td><span class="icon_date">26/02/2009</span></td>
+				<td><span class="icon_time">20h11 </span></td>
+			</tr>
+			</table>				
+		</div>
+		<div class="text"><p style="text-align:center;"><img alt="Mon répertoire" src="../../../../img/2009/02/26/090226081550581273221931.png"/></p>
+
+<p>PS : Maintenant, les commentateurs recoivent un email quand je réponds à un de leur commentaire. C'est une fonctionnalité désactivable, mais comme je suis un tyran, je vous laisse pas le choix :D</p></div>
+		
+		
+			<h3 id="comments" class="icon_comment">Commentaires</h3>
+			
+			<div class="comment" id="Guillaub2009-02-26T21:39:18">
+				<div class="count">
+					<a href="index.html#Guillaub2009-02-26T21:39:18">1</a>
+				</div>
+				<div class="box">
+					<div class="box_comment">
+						<div class="message">
+							<p>J'aurais espéré que tu te souviennes de notre folle nuit d'amour.</p>
+						</div>
+						<div class="meta">
+							<b>
+								<a href="http://ragondin-bd.blogspot.com/">Guillaub</a>
+							</b>
+							à 21h39
+							le 26/02/2009
+						</div>
+					</div>
+					
+					<div class="box_reply">
+						<div class="author">
+							Réponse de <b>plop</b> :
+						</div>
+						<div class="reply">
+							P'tit con va :P
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+			<div class="comment" id="Matt&#39;2009-02-26T22:31:14">
+				<div class="count">
+					<a href="index.html#Matt&#39;2009-02-26T22:31:14">2</a>
+				</div>
+				<div class="box">
+					<div class="box_comment">
+						<div class="message">
+							<p>Ahah ca me fait penser a mon gsm ça :D</p><p>Sinon, j'vois que c'est nouveau par ici :o</p><p>J'aime bien le graphisme ^^</p><p>Et le dessin aussi =)</p>
+						</div>
+						<div class="meta">
+							<b>
+								Matt&#39;
+							</b>
+							à 22h31
+							le 26/02/2009
+						</div>
+					</div>
+					
+					<div class="box_reply">
+						<div class="author">
+							Réponse de <b>plop</b> :
+						</div>
+						<div class="reply">
+							Merci pour les compliments :D<br/>
+Et bienvenue sur mon blog puisque apparemment tu es nouveau dans le coin ;)<br/>
+(Et d'ailleurs tu es le premier à tester la version HTML du mail automatique :D)<br/>
+(Oui oui, je vais remettre la possibilité de le désactiver ^^)
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+			<div class="comment" id="Snae2009-02-27T12:01:49">
+				<div class="count">
+					<a href="index.html#Snae2009-02-27T12:01:49">3</a>
+				</div>
+				<div class="box">
+					<div class="box_comment">
+						<div class="message">
+							<p>Quand on en arrive à ce point c'est qu'il est temps de changer de portable...la flemme de remettre tous le répertoire permet de faire un gros tri très sélectif ;)</p>
+						</div>
+						<div class="meta">
+							<b>
+								<a href="http://snae.u7n.org/">Snae</a>
+							</b>
+							à 12h01
+							le 27/02/2009
+						</div>
+					</div>
+					
+					<div class="box_reply">
+						<div class="author">
+							Réponse de <b>plop</b> :
+						</div>
+						<div class="reply">
+							Il serait peut-être temps en effet :D<br/>
+J'ai ce portable depuis août 2004... mais j'espère bien le faire tenir encore un an ou deux :D
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+			<div class="comment" id="juju2009-02-27T13:54:08">
+				<div class="count">
+					<a href="index.html#juju2009-02-27T13:54:08">4</a>
+				</div>
+				<div class="box">
+					<div class="box_comment">
+						<div class="message">
+							<p>très joli ton trait Plop ! et ranges un peu mieux ce portable^^</p>
+						</div>
+						<div class="meta">
+							<b>
+								<a href="http://www.ptitenezu.blogspot.com/">juju</a>
+							</b>
+							à 13h54
+							le 27/02/2009
+						</div>
+					</div>
+					
+					<div class="box_reply">
+						<div class="author">
+							Réponse de <b>plop</b> :
+						</div>
+						<div class="reply">
+							Le répète pas mais... j'ai triché ^^<br/>
+Pour que ça rende plus joli je l'ai vectorisé. Maintenant je vais tout le temps faire ça :D
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+			<div class="comment" id="élo2009-03-01T20:10:26">
+				<div class="count">
+					<a href="index.html#élo2009-03-01T20:10:26">5</a>
+				</div>
+				<div class="box">
+					<div class="box_comment">
+						<div class="message">
+							<p>Très cher plop, </p><p>c'est la première fois que je viens sur ton nouveau blog tout nouveau tout beau. J'ai un peu honte de n'y venir qu'une semaine après sa mise en ligne, mais on va dire que c'était le temps nécessaire pour que l'info arrive jusqu'ici ! J'avoue que je suis assez impressionnée, petit plop a vite (enfin, vite, tout est relatif) grandi ! Donc félicitations pour ton travail, et longue vie à ton blop !</p>
+						</div>
+						<div class="meta">
+							<b>
+								élo
+							</b>
+							à 20h10
+							le 01/03/2009
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+			<div class="comment" id="hadh2009-03-02T13:52:09">
+				<div class="count">
+					<a href="index.html#hadh2009-03-02T13:52:09">6</a>
+				</div>
+				<div class="box">
+					<div class="box_comment">
+						<div class="message">
+							<p>Ahah, le mien c'est un peu pareil u_u"</p><p></p><p>Mis a part que y'a moins de contacts quand même :o (oui j'ai pas beaucoup d'amis mais j'ai pas beaucoup de faux amis non plus)</p>
+						</div>
+						<div class="meta">
+							<b>
+								<a href="http://vraimentfacilearetenir.over-blog.com/">hadh</a>
+							</b>
+							à 13h52
+							le 02/03/2009
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+			<div class="comment" id="Kichi2009-03-04T22:34:00">
+				<div class="count">
+					<a href="index.html#Kichi2009-03-04T22:34:00">7</a>
+				</div>
+				<div class="box">
+					<div class="box_comment">
+						<div class="message">
+							<p>Ouaah ton nouveau blog est so geekounet.</p><p>Et ta tête a bien changée, mais tu t'es pas fait frizé, mouhouhahaha.</p><p>T'as raison, ton répertoire téléphononique m'a trop fait penser à face-de-livre. </p>
+						</div>
+						<div class="meta">
+							<b>
+								<a href="http://www.kichi.fr/">Kichi</a>
+							</b>
+							à 22h34
+							le 04/03/2009
+						</div>
+					</div>
+					
+					<div class="box_reply">
+						<div class="author">
+							Réponse de <b>plop</b> :
+						</div>
+						<div class="reply">
+							Mais stop quoi ! Je suis pas frisé :P
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+			<div class="comment" id="Fanfoué2009-03-06T19:44:14">
+				<div class="count">
+					<a href="index.html#Fanfoué2009-03-06T19:44:14">8</a>
+				</div>
+				<div class="box">
+					<div class="box_comment">
+						<div class="message">
+							<p>Roooo, merde je fais partie du groupe Pays de Galles.... :p</p><p>Sinon super nouveau blog !</p>
+						</div>
+						<div class="meta">
+							<b>
+								Fanfoué
+							</b>
+							à 19h44
+							le 06/03/2009
+						</div>
+					</div>
+					
+					<div class="box_reply">
+						<div class="author">
+							Réponse de <b>plop</b> :
+						</div>
+						<div class="reply">
+							Héhé ouais ça faisait longtemps ^^
+J'espère que ça va bien de ton côté !
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+			<div class="comment" id="Aurél2009-03-17T19:52:01">
+				<div class="count">
+					<a href="index.html#Aurél2009-03-17T19:52:01">9</a>
+				</div>
+				<div class="box">
+					<div class="box_comment">
+						<div class="message">
+							<p>Et ba en tout cas dans les 6 gars que t'as rencontré au Pays de Galles, y en à deux qui vont sur ton nouveau blog !! (Et paf)</p><p>Sympa ton blog, c'est chouette (si on fait un pictionary, tu te mets avec moi ? hein !)</p>
+						</div>
+						<div class="meta">
+							<b>
+								Aurél
+							</b>
+							à 19h52
+							le 17/03/2009
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+		
+		
+		
+			<h3 id="addcomment" class="icon_comment_edit">Ajouter un commentaire</h3>
+		
+		<form action="#addcomment" method="post" class="comment_forms">
+			
+				<div class="form">
+					
+					<label for="id_author">Nom ou pseudo :</label> <input id="id_author" type="text" name="author" maxlength="50" />
+				</div>
+    		
+				<div class="form">
+					
+					<label for="id_email">Email :</label> <input id="id_email" type="text" name="email" maxlength="75" />
+				</div>
+    		
+				<div class="form">
+					
+					<label for="id_url">Site internet :</label> <input id="id_url" type="text" name="url" maxlength="200" />
+				</div>
+    		
+				<div class="form">
+					
+					<label for="id_content">Message :</label> <textarea id="id_content" rows="10" cols="40" name="content"></textarea>
+				</div>
+    		
+		<p style="display: none;">
+			<label for="id_age">Si vous soumettez quelque chose dans ce champs votre commentaire va être considéré comme étant indésirable</label>
+			<input id="id_age" type="text" name="age"/>
+		</p>
+		<p style="font-size: 90%; color: #888888; text-align: center;">Le code HTML est affiché comme du texte et les adresses web sont automatiquement transformées.</p>
+		<p><input type="submit" value="Envoyer" class="submit"/></p>
+		</form>
+	
+
+			</div>
+			<div class="nav_pages">
+				
+	
+		<div class="arrow next_none"></div>
+	
+
+	
+		<div class="arrow previous_none"></div>
+	
+	
+	<a href="../../../../index-2.html" class="arrow home" onfocus="this.blur()"></a>
+
+
+			</div>
+		</div>
+		<div class="footer">
+			
+			
+		</div>
+		<div class="menu">
+			
+	<div class="glossymenu">
+		<a class="menuitem" href="../../../../index-2.html" onfocus="this.blur()"><span class="icon_house">Accueil</span></a>
+		
+		<a class="menuitem submenuheader" href="#" onfocus="this.blur()"><span class="icon_heart">Liens</span></a>
+		<div class="submenu text">
+			
+				<ul>
+				
+					<!--<li style="height:50px;background-image:url(/links/aly2_.png);">
+						<a
+							href="http://blogaaly.blogspot.com/"
+							onmouseover="fadeOutImage(this)"
+							onmouseout="fadeInImage(this)"
+						>
+							<img src="/links/aly2.png" class="link1" alt="Aly"/>
+						</a>
+					</li>-->
+					<li><a href="http://blogaaly.blogspot.com/">Aly</a></li>
+				
+					<!--<li style="height:50px;background-image:url(/links/vide_____________.png);">
+						<a
+							href="http://bouletcorp.com/"
+							onmouseover="fadeOutImage(this)"
+							onmouseout="fadeInImage(this)"
+						>
+							<img src="/links/vide____________.png" class="link2" alt="Boulet"/>
+						</a>
+					</li>-->
+					<li><a href="http://bouletcorp.com/">Boulet</a></li>
+				
+					<!--<li style="height:50px;background-image:url(/links/vide_.png);">
+						<a
+							href="http://krevettestrip.blogspot.com/"
+							onmouseover="fadeOutImage(this)"
+							onmouseout="fadeInImage(this)"
+						>
+							<img src="/links/vide.png" class="link3" alt="Florian70"/>
+						</a>
+					</li>-->
+					<li><a href="http://krevettestrip.blogspot.com/">Florian70</a></li>
+				
+					<!--<li style="height:50px;background-image:url(/links/vide___.png);">
+						<a
+							href="http://www.ptitenezu.blogspot.com/"
+							onmouseover="fadeOutImage(this)"
+							onmouseout="fadeInImage(this)"
+						>
+							<img src="/links/vide__.png" class="link4" alt="Juju"/>
+						</a>
+					</li>-->
+					<li><a href="http://www.ptitenezu.blogspot.com/">Juju</a></li>
+				
+					<!--<li style="height:50px;background-image:url(/links/vide_______.png);">
+						<a
+							href="http://laviedeprepa.canalblog.com/"
+							onmouseover="fadeOutImage(this)"
+							onmouseout="fadeInImage(this)"
+						>
+							<img src="/links/vide______.png" class="link5" alt="La vie d&#39;étudiant"/>
+						</a>
+					</li>-->
+					<li><a href="http://laviedeprepa.canalblog.com/">La vie d&#39;étudiant</a></li>
+				
+					<!--<li style="height:50px;background-image:url(/links/vide_________.png);">
+						<a
+							href="http://www.leszillusdemissbean.com/le-blog/index.php"
+							onmouseover="fadeOutImage(this)"
+							onmouseout="fadeInImage(this)"
+						>
+							<img src="/links/vide________.png" class="link6" alt="Missbean"/>
+						</a>
+					</li>-->
+					<li><a href="http://www.leszillusdemissbean.com/le-blog/index.php">Missbean</a></li>
+				
+					<!--<li style="height:50px;background-image:url(/links/vide___________.png);">
+						<a
+							href="http://yap-yap-yap-yap.blogspot.com/"
+							onmouseover="fadeOutImage(this)"
+							onmouseout="fadeInImage(this)"
+						>
+							<img src="/links/vide__________.png" class="link7" alt="Pierrot"/>
+						</a>
+					</li>-->
+					<li><a href="http://yap-yap-yap-yap.blogspot.com/">Pierrot</a></li>
+				
+					<!--<li style="height:50px;background-image:url(/links/rag2.png);">
+						<a
+							href="http://ragondin-blog.com/"
+							onmouseover="fadeOutImage(this)"
+							onmouseout="fadeInImage(this)"
+						>
+							<img src="/links/rag1.png" class="link8" alt="Ragondin"/>
+						</a>
+					</li>-->
+					<li><a href="http://ragondin-blog.com/">Ragondin</a></li>
+				
+					<!--<li style="height:50px;background-image:url(/links/vide_____.png);">
+						<a
+							href="http://romaq.canalblog.com/"
+							onmouseover="fadeOutImage(this)"
+							onmouseout="fadeInImage(this)"
+						>
+							<img src="/links/vide____.png" class="link9" alt="Romaq"/>
+						</a>
+					</li>-->
+					<li><a href="http://romaq.canalblog.com/">Romaq</a></li>
+				
+					<!--<li style="height:50px;background-image:url(/links/vide_______________.png);">
+						<a
+							href="http://setoan.blogspot.com/"
+							onmouseover="fadeOutImage(this)"
+							onmouseout="fadeInImage(this)"
+						>
+							<img src="/links/vide______________.png" class="link10" alt="Setoan"/>
+						</a>
+					</li>-->
+					<li><a href="http://setoan.blogspot.com/">Setoan</a></li>
+				
+				</ul>
+			
+		</div>	
+		<a class="menuitem submenuheader" href="#" onfocus="this.blur()"><span class="icon_folder">Archives</span></a>
+		<div class="submenu text">
+			
+				<ul>
+				
+					<li><a href="../../index.html">Février 2009</a></li>
+				
+					<li><a href="../../../3/index.html">Mars 2009</a></li>
+				
+					<li><a href="../../../4/index.html">Avril 2009</a></li>
+				
+					<li><a href="../../../6/index.html">Juin 2009</a></li>
+				
+					<li><a href="../../../7/index.html">Juillet 2009</a></li>
+				
+					<li><a href="../../../9/index.html">Septembre 2009</a></li>
+				
+					<li><a href="../../../12/index.html">Décembre 2009</a></li>
+				
+					<li><a href="../../../../2010/10/index.html">Octobre 2010</a></li>
+				
+					<li><a href="../../../../2010/11/index.html">Novembre 2010</a></li>
+				
+					<li><a href="../../../../archives/index.html">Toutes les archives</a></li>
+				</ul>
+			
+		</div>	
+		<a class="menuitem submenuheader" href="#" onfocus="this.blur()"><span class="icon_pictures">Catégories</span></a>
+		<div class="submenu text">
+			
+				<ul>
+				
+					<li><a href="../../../../cat/3615-mylife/index.html">3615 Mylife</a></li>
+				
+					<li><a href="../../../../cat/screenshot/index.html">Screenshot</a></li>
+				
+					<li><a href="../../../../cat/jeux-videos/index.html">Jeux vidéo</a></li>
+				
+					<li><a href="../../../../cat/sans-categorie/index.html">Sans catégorie</a></li>
+				
+				</ul>
+			
+		</div>
+		<a class="menuitem submenuheader" href="#" onfocus="this.blur()"><span class="icon_feed">Syndication</span></a>
+		<div class="submenu text">
+			<ul>
+			<li><a href="../../../../feeds/rss/index.html">Fil rss</a></li>
+			<li><a href="../../../../feeds/rsscomments/index.html">Fil rss commentaires</a></li>
+			<li><a href="../../../../feeds/atom/index.html">Fil atom</a></li>
+			<li><a href="../../../../feeds/atomcomments/index.html">Fil atom commentaires</a></li>
+			</ul>
+		</div>
+		<a class="menuitem" href="../../../../about/index.html" onfocus="this.blur()"><span class="icon_information">À propos</span></a>
+	</div>
+
+		</div>
+	</div>
+	<script type="text/javascript">
+		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+		document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+		try {
+		var pageTracker = _gat._getTracker("UA-2508341-5");
+		pageTracker._trackPageview();
+		} catch(err) {}
+	</script>
+	</body>
+
+<!-- Mirrored from plopounet.net/2009/2/26/mon-repertoire/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 01 May 2017 10:44:26 GMT -->
+</html>
+

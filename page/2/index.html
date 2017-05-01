@@ -1,0 +1,568 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+	
+<!-- Mirrored from plopounet.net/page/2/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 01 May 2017 10:44:25 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+		<title>Le blog BD de plop</title>
+		<meta name="keywords" lang="fr" content="plop, plopounet, BD, blog, dessin, illustration, geek, libre, pingus, django, python" />
+		<meta name="description" content="Le blog BD de plop, un tas de dessins stupides et d'histoires de geek. Le tout libre de droit !" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="Content-Language" content="fr" />
+		<meta http-equiv="Content-Script-Type" content="text/javascript" />
+		<link href="../../design/style.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="../../accordion/design_accord/accord.css" />
+		<link rel="stylesheet" type="text/css" href="../../lightbox/css/jquery.lightbox-0.5.css" media="screen" />
+		<link rel="shortcut icon" href="../../pingus/wait.gif" />
+		<link rel="alternate" type="application/atom+xml" title="Le blog BD de plop - Atom" href="../../feeds/atom/index.html" />
+		<link rel="alternate" type="application/rss+xml" title="Le blog BD de plop - RSS" href="../../feeds/rss/index.html" />
+		<script type="text/javascript" src="../../accordion/js/prototype.html"></script>
+		<script type="text/javascript" src="../../accordion/ddaccordion.js"></script>
+		<script type="text/javascript" src="../../jquery-1.3.1.min.js"></script>
+		<script type="text/javascript" src="../../preloadImages.js"></script>
+		<script type="text/javascript" src="../../pingus/jquery.timer.js"></script>
+		<script type="text/javascript" src="../../pingus/jquery.sound.js"></script>
+		<script type="text/javascript" src="../../pingus/pingus.js"></script>
+	<!-- NON LIBRE -->
+		<script type="text/javascript" src="../../lightbox/js/jquery.lightbox-0.5.min.js"></script>
+	<!-- FIN NON LIBRE -->
+		<script type="text/javascript">
+				
+		ddaccordion.init({
+			headerclass: "submenuheader", //Shared CSS class name of headers group
+			contentclass: "submenu", //Shared CSS class name of contents group
+			revealtype: "click", //Reveal content when user clicks or onmouseover the header? Valid value: "click" or "mouseover
+			collapseprev: true, //Collapse previous content (so only one open at any time)? true/false 
+			defaultexpanded: [], //index of content(s) open by default [index1, index2, etc] [] denotes no content
+			animatedefault: false, //Should contents open by default be animated into view?
+			persiststate: true, //persist state of opened contents within browser session?
+			toggleclass: ["", ""], //Two CSS classes to be applied to the header when it's collapsed and expanded, respectively ["class1", "class2"]
+			togglehtml: [
+				"suffix", 
+				"../../accordion/design_accord/plus.png", 
+				"../../accordion/design_accord/minus.png"
+			], 
+			animatespeed: "normal", //speed of animation: "fast", "normal", or "slow"
+			oninit:function(headers, expandedindices){ //custom code to run when headers have initalized
+				//do nothing
+			},
+			onopenclose:function(header, index, state, isuseractivated){ //custom code to run whenever a header is opened or closed
+				//do nothing
+			}
+		});
+		
+		function fadeOutImage() 
+		{
+			$(fadeOutImage.arguments[0]).fadeTo(200, 0);
+		};
+		
+		function fadeInImage() 
+		{
+			$(fadeInImage.arguments[0]).fadeTo(200, 1);
+		};
+		
+		$.preloadImages(
+			"../../accordion/design_accord/minus.png",
+			"../../accordion/design_accord/menuitem2.png",
+			"../../design/accueil_hover.png"
+		);
+
+		$(function() {
+			$('a.lightbox').lightBox({
+				imageLoading: '/lightbox/images/lightbox-ico-loading.gif',
+				imageBtnClose: '/lightbox/images/lightbox-btn-close.gif',
+				imageBtnPrev: '/lightbox/images/lightbox-btn-prev.gif',
+				imageBtnNext: '/lightbox/images/lightbox-btn-next.gif'
+			});
+		});
+
+		pingus.play({
+    		id: "pingus",		// Id of the div where pingus will live
+    		limit_left: 20,		// Where pingus starts, in pixels (0 means pingus starts at the beginning of its parent div)
+    		limit_right: 490,	// Where pingus turns back, in pixels
+    		sound_enabled: true,// Enable sounds (true/false)
+    		url_media: "http://plopounet.alwaysdata.net/pingus/"		// url of the pingus directory (DON'T FORGET THE TRAILING SLASH)
+		});
+		</script>
+
+	</head>
+	<body>
+	<div class="body">
+		<div class="banner">
+			
+	
+		<a href="../../index-2.html">
+			<img src="../../banner/banniere-geek_.png" alt="Le blog BD de plop"/>
+		</a>
+	
+
+		</div>
+		<div class="random_image">
+			
+	
+		<div class="image">
+			<img src="../../random_image/obama.png" alt="Obama" />
+		</div>
+		
+		<div class="box">
+			<div class="inbox">
+				
+					<h4
+					
+						class="text_align_left"
+					
+					
+					
+					>
+					
+					<span class="icon_comment">Obama</span> 
+					
+					dit :</h4>
+					
+						<div class="blank"></div>
+					
+				
+				
+					<p>Oui ! Ce blog peut le faire !</p>
+				
+			</div>
+		</div>
+		<div class="bas"></div>
+		
+	
+
+		</div>
+		<div class="header">
+			<div id="pingus"></div>
+		</div>
+		<div class="blank"></div>
+		<div class="middle">
+			<div class="content">
+				
+	
+		
+			
+				<h2 id="le-retour-du-roi-arthur"><a href="../../2009/6/8/le-retour-du-roi-arthur/index.html"><span class="icon_page_white_edit">Le retour du roi (Arthur)</span></a>
+				
+					<span class="category">dans la catégorie <a href="../../cat/3615-mylife/index.html">3615 Mylife</a></span>
+				
+				</h2>
+				<div class="meta">
+					<table>
+					<tr>
+						<td><span class="icon_status_online">plop</span></td>
+						<td><span class="icon_date">08/06/2009</span></td>
+						<td><span class="icon_time">22h14 </span></td>
+					</tr>
+					</table>				
+				</div>
+				<div class="text">
+				<p><b>NOTE</b> : Si vous ne regardez pas la télé, regardez <a href="http://www.youtube.com/watch?v=Dlub6eBhNag">cette pub</a> avant de lire. Sinon vous allez pas comprendre, mais c'est votre droit après tout :D</p>
+
+<img alt="Le retour du roi (Arthur)" src="../../img/2009/06/08/090608100134581273830268.png"/>
+<p>(C'est dessiné dans le train alors soyez indulgents si vous trouvez que c'est pas ressemblant :P)</p>
+<p>Et oui, en fait j'étais pas mort faut croire. J'ai passé mes exams (j'ai les résultats demaaaaain), j'ai trouvé un job d'été (dont vous entendrez parler sur le blog sous peu), commencé un p'tit projet avec de la 3D et et des explosions (dont vous entendrez parler sur le blog sous peu), bref j'ai été un mort animé :D J'avais juste un peu la flemme de mettre à jour le blog ^^'</p>
+
+<p>Voilà (avec beaucoup de retard) des dédicaces que j'ai reçues :</p>
+<p>Tout d'abord <a href="http://romaq.canalblog.com/">Romaq</a> que j'ai <a href="../../2009/4/26/rencontre-avec-un-belge/index.html">rencontré à Carcassonne</a> y a quelques mois.</p>
+
+<p style="text-align :center;">
+<a href="http://romaq.canalblog.com/">
+<img alt="Dédicace Romaq 1" src="../../img/2009/06/08/090608100134581273830269.png"/>
+<img alt="Dédicace Romaq 1" src="../../img/2009/06/08/090608100135581273830270.png"/>
+</a>
+</p>
+
+<p>Et <a href="http://unpied.canalblog.com/">Unpied</a>, que j'ai vu au salon de la BD de Toulouse où j'ai acheté sa BD "La nostalgie de Dieu" qui est franchement terrible (et que vous pouvez <a href="http://pourdieutapezun.canalblog.com/">lire en blog !</a>).</p>
+<p style="text-align :center;">
+<a href="http://pourdieutapezun.canalblog.com/">
+<img alt="Dédicace Unpied" src="../../img/2009/06/08/090608100135581273830271.png" /></a>
+</p>
+
+<p> Et pour finir, parce que je vous le valez bien, le Grève Hebdo n°1 (le premier c'était le n°0) avec 1 mois de retard :D</p>
+
+<a href="http://upsenlutte.org/public/greve-hebdo/GreveHEBDO_1-tirage2-300ppp.pdf">
+<img alt="Greve Hebdo 1" src="../../img/2009/06/08/090608101051581273830358.png"/></a>
+				</div>
+				<div class="comments">
+					<span class="icon_comment"><a href="../../2009/6/8/le-retour-du-roi-arthur/index.html#comments">3 commentaires</a></span>
+				</div>
+				
+					<div class="blank"></div>
+				
+			
+		
+			
+				<h2 id="ma-premiere-edition"><a href="../../2009/4/27/ma-premiere-edition/index.html"><span class="icon_page_white_edit">Ma première edition</span></a>
+				
+					<span class="category">dans la catégorie <a href="../../cat/3615-mylife/index.html">3615 Mylife</a></span>
+				
+				</h2>
+				<div class="meta">
+					<table>
+					<tr>
+						<td><span class="icon_status_online">plop</span></td>
+						<td><span class="icon_date">27/04/2009</span></td>
+						<td><span class="icon_time">19h23 </span></td>
+					</tr>
+					</table>				
+				</div>
+				<div class="text">
+				<p style="text-align:center;"><b>A moi la gloire, la richesse et les filles nuuuuues !</b></p>
+<p>Enfin presque. Mes dessins sont parus dans un petit journal d'information sur la grève et le mouvement anti-LRU à la fac : le Grève Hebdo !</p>
+<a href="http://upsenlutte.org/public/greve-hebdo/GreveHEBDO_0.pdf"><img src="../../img/2009/04/27/090427071526581273555927.png" alt="greve hebdo"/></a>
+<p>Le logo est une déformation du logo de l'Université Paul Sabatier (UPS) - et c'est aussi moi qui l'ai fait, enfin, la déformation, pas l'original :D</p>
+<p style="text-align:center;"><img src="../../img/2009/04/27/090427072819581273556019.png" alt="greve hebdo" /></p>
+<p>Et voilà quelques aperçus des dessins qui s'y trouvent. Mais si vous voulez trouver ça intéressant, vous devriez lire le texte qui va avec <a href="http://upsenlutte.org/public/greve-hebdo/GreveHEBDO_0.pdf">ici</a>. La rubrique s'appelle <b>2015 l'Odyssée de la fac</b>.</p>
+
+<div style="text-align:center;">
+<a class="lightbox" href="../../img/2009/04/27/090427074353581273556109.png"><img 
+ style="border:1px solid black;" alt="od1" src="../../img/2009/04/27/090427074149581273556096.png" height="80" width="80"/></a>
+
+<a class="lightbox" href="../../img/2009/04/27/090427074353581273556110.png"><img 
+ style="border:1px solid black;" alt="od2" src="../../img/2009/04/27/090427074149581273556097.png" height="80" width="80"/></a>
+
+<a class="lightbox" href="../../img/2009/04/27/090427074353581273556111.png"><img 
+ style="border:1px solid black;" alt="od3" src="../../img/2009/04/27/090427074149581273556098.png" height="80" width="80"/></a>
+
+</div>
+
+<p style="text-align:center;"><a href="http://upsenlutte.org/public/greve-hebdo/GreveHEBDO_0.pdf"><img src="../../img/2009/04/27/090427080019581273556218.png" alt="greve hebdo"/></a>
+<br/>
+<span style="font-size:75%;">Le PDF est un peu gros, alors n'utilisez pas cette cochonnerie d'acrobat reader sinon ça va ramer :)</span></p>
+
+
+				</div>
+				<div class="comments">
+					<span class="icon_comment"><a href="../../2009/4/27/ma-premiere-edition/index.html#comments">7 dépôts de plainte</a></span>
+				</div>
+				
+					<div class="blank"></div>
+				
+			
+		
+			
+				<h2 id="rencontre-avec-un-belge"><a href="../../2009/4/26/rencontre-avec-un-belge/index.html"><span class="icon_page_white_edit">Rencontre avec un belge</span></a>
+				
+					<span class="category">dans la catégorie <a href="../../cat/3615-mylife/index.html">3615 Mylife</a></span>
+				
+				</h2>
+				<div class="meta">
+					<table>
+					<tr>
+						<td><span class="icon_status_online">plop</span></td>
+						<td><span class="icon_date">26/04/2009</span></td>
+						<td><span class="icon_time">21h40 </span></td>
+					</tr>
+					</table>				
+				</div>
+				<div class="text">
+				<p>Vous le savez peut-être, il y a deux semaines, j'ai rencontré ce belge de <a href="http://romaq.canalblog.com/">Romaq</a> qui était en vacances dans le Sud de la France avec sa femme et ses enfants... haha non c'est pas vrai, en fait il a 11 ans.</p>
+<p>Bref, on a dessiné. Aujourd'hui est donc le jour du compte rendu ! (c'est du boulout vous voyez ? mais comme on est très doué, on a plié ça en à peine deux semaines)</p>
+<p>Voici donc l'histoire racontant <b>pourquoi je m'appelle plop</b>. Par <a href="http://romaq.canalblog.com/">Romaq</a>. (Et dès demain, vous aurez l'histoire du pourquoi il s'appelle romaq, par moi, sur son blog. Je mettrai un lien.)</p>
+<img src="../../img/2009/04/26/090426092313581273550597.png" alt="romaq"/>
+				</div>
+				<div class="comments">
+					<span class="icon_comment"><a href="../../2009/4/26/rencontre-avec-un-belge/index.html#comments">1 remarques pénibles sorties par des casse-couilles</a></span>
+				</div>
+				
+					<div class="blank"></div>
+				
+			
+		
+			
+				<h2 id="un-article-qui-sert-rien"><a href="../../2009/4/18/un-article-qui-sert-rien/index.html"><span class="icon_page_white_edit">Un article qui sert a rien</span></a>
+				
+				</h2>
+				<div class="meta">
+					<table>
+					<tr>
+						<td><span class="icon_status_online">plop</span></td>
+						<td><span class="icon_date">18/04/2009</span></td>
+						<td><span class="icon_time">13h36 </span></td>
+					</tr>
+					</table>				
+				</div>
+				<div class="text">
+				<p>Et oui j'ai la flemme de dessiner :D</p>
+
+<p>Je dois faire la chaine que m'a envoyé <a href="http://www.ptitenezu.blogspot.com/">Juju</a>, poster les dessins de <a href="http://romaq.canalblog.com/">Romaq</a>, mettre à jour mes liens... mais j'ai la flemme !</p>
+
+<p>Mais comme je suis gentil et je vais vous raconter une histoire qui vous permettra de vous coucher moins con ce soir (car je sais que vous l'êtes un peu, pas tous, mais presque) :</p>
+
+<br/>
+
+<p style="font-size:120%;"><b>Savez-vous comment a été inventé la webcam ?</b></p>
+
+<table><tr>
+<td style="vertical-align:top; padding-right:15px;">
+<p style="margin-top:0px;">Tout commença avec deux putain de gros feignants à l'université de Cambridge en Angleterre : James Quentin Stafford-Fraser et Paul Jardetzky.</p>
+<p>Ces deux chercheurs du département informatique avaient un gros problème : ça les tuait de marcher jusqu'à la salle de repos et de s'apercevoir qu'il n'y avait plus de café dans la cafetière.</p>
+<p>Alors, en 1991, ils ont installé un serveur avec une petite caméra juste en face de la cafetière afin de pouvoir vérifier le niveau de café. Ainsi est née la première webcam du monde.</p>
+<p style="font-size:80%;">Source : <a href="http://en.wikipedia.org/wiki/Trojan_room_coffee_pot">wikipedia</a></p>
+</td>
+<td><img height="159" width="142" style="border:0;" src="../../wikipedia/commons/b/b8/Trojan_Room_coffee_pot_xcoffee.png" alt="File:Trojan Room coffee pot xcoffee.png"/></td>
+</tr>
+</table>
+
+<br/>
+
+<p>PS : <b>Ouned kek !</b></p>
+<p>kek a fait un autre petit jeu il y a quelques jours. Il permet de connaître notre futur, entre autres, en lachant une petite balle comme dans le juste prix d'il y a 10 ans.</p>
+<p style="text-align:center;"><img src="../../img/2009/04/18/090418013228581273500475.png" alt="ouned kek !" height="513" /></p>
+<p>J'ai aussi appris que j'allais mourir en 3895 et que dans 5 ans je serai millionnaire. Par contre je sens le gras et je suis secrètement amoureux de Cha...</p>
+<p style="text-align:center;"><a href="http://blog.zanorg.com/?perm=386">Allez essayer ici !</a></p>
+				</div>
+				<div class="comments">
+					<span class="icon_comment"><a href="../../2009/4/18/un-article-qui-sert-rien/index.html#comments">2 gloussements de fans</a></span>
+				</div>
+				
+					<div class="blank"></div>
+				
+			
+		
+			
+				<h2 id="pourquoi-les-geeks-vivent-dans-le-noir"><a href="../../2009/4/13/pourquoi-les-geeks-vivent-dans-le-noir/index.html"><span class="icon_page_white_edit">Pourquoi les geeks vivent dans le noir ?</span></a>
+				
+					<span class="category">dans la catégorie <a href="../../cat/3615-mylife/index.html">3615 Mylife</a></span>
+				
+				</h2>
+				<div class="meta">
+					<table>
+					<tr>
+						<td><span class="icon_status_online">plop</span></td>
+						<td><span class="icon_date">13/04/2009</span></td>
+						<td><span class="icon_time">23h00 </span></td>
+					</tr>
+					</table>				
+				</div>
+				<div class="text">
+				<p><img height="1000" alt="Pourquoi les geeks vivent dans le noir ?" src="../../img/2009/04/13/090413105709581273476363.png"/></p>
+
+<p>J'ai été absent quelques jours mais je suis de retour ! Très bientôt du niou avec des commérages sur <a href="http://romaq.canalblog.com/"> Romaq</a> héhéhé...</p>
+
+
+				</div>
+				<div class="comments">
+					<span class="icon_comment"><a href="../../2009/4/13/pourquoi-les-geeks-vivent-dans-le-noir/index.html#comments">3 commentaires</a></span>
+				</div>
+				
+			
+		
+	
+
+			</div>
+			<div class="nav_pages">
+				
+	
+		<a href="../1/index.html" class="arrow next" onfocus="this.blur()"></a>
+	
+
+	
+		<a href="../3/index.html" class="arrow previous" onfocus="this.blur()"></a>
+	
+	
+	<a href="../../index-2.html" class="arrow home" onfocus="this.blur()"></a>
+
+
+			</div>
+		</div>
+		<div class="footer">
+			
+			
+		</div>
+		<div class="menu">
+			
+	<div class="glossymenu">
+		<a class="menuitem" href="../../index-2.html" onfocus="this.blur()"><span class="icon_house">Accueil</span></a>
+		
+		<a class="menuitem submenuheader" href="#" onfocus="this.blur()"><span class="icon_heart">Liens</span></a>
+		<div class="submenu text">
+			
+				<ul>
+				
+					<!--<li style="height:50px;background-image:url(/links/aly2_.png);">
+						<a
+							href="http://blogaaly.blogspot.com/"
+							onmouseover="fadeOutImage(this)"
+							onmouseout="fadeInImage(this)"
+						>
+							<img src="/links/aly2.png" class="link1" alt="Aly"/>
+						</a>
+					</li>-->
+					<li><a href="http://blogaaly.blogspot.com/">Aly</a></li>
+				
+					<!--<li style="height:50px;background-image:url(/links/vide_____________.png);">
+						<a
+							href="http://bouletcorp.com/"
+							onmouseover="fadeOutImage(this)"
+							onmouseout="fadeInImage(this)"
+						>
+							<img src="/links/vide____________.png" class="link2" alt="Boulet"/>
+						</a>
+					</li>-->
+					<li><a href="http://bouletcorp.com/">Boulet</a></li>
+				
+					<!--<li style="height:50px;background-image:url(/links/vide_.png);">
+						<a
+							href="http://krevettestrip.blogspot.com/"
+							onmouseover="fadeOutImage(this)"
+							onmouseout="fadeInImage(this)"
+						>
+							<img src="/links/vide.png" class="link3" alt="Florian70"/>
+						</a>
+					</li>-->
+					<li><a href="http://krevettestrip.blogspot.com/">Florian70</a></li>
+				
+					<!--<li style="height:50px;background-image:url(/links/vide___.png);">
+						<a
+							href="http://www.ptitenezu.blogspot.com/"
+							onmouseover="fadeOutImage(this)"
+							onmouseout="fadeInImage(this)"
+						>
+							<img src="/links/vide__.png" class="link4" alt="Juju"/>
+						</a>
+					</li>-->
+					<li><a href="http://www.ptitenezu.blogspot.com/">Juju</a></li>
+				
+					<!--<li style="height:50px;background-image:url(/links/vide_______.png);">
+						<a
+							href="http://laviedeprepa.canalblog.com/"
+							onmouseover="fadeOutImage(this)"
+							onmouseout="fadeInImage(this)"
+						>
+							<img src="/links/vide______.png" class="link5" alt="La vie d&#39;étudiant"/>
+						</a>
+					</li>-->
+					<li><a href="http://laviedeprepa.canalblog.com/">La vie d&#39;étudiant</a></li>
+				
+					<!--<li style="height:50px;background-image:url(/links/vide_________.png);">
+						<a
+							href="http://www.leszillusdemissbean.com/le-blog/index.php"
+							onmouseover="fadeOutImage(this)"
+							onmouseout="fadeInImage(this)"
+						>
+							<img src="/links/vide________.png" class="link6" alt="Missbean"/>
+						</a>
+					</li>-->
+					<li><a href="http://www.leszillusdemissbean.com/le-blog/index.php">Missbean</a></li>
+				
+					<!--<li style="height:50px;background-image:url(/links/vide___________.png);">
+						<a
+							href="http://yap-yap-yap-yap.blogspot.com/"
+							onmouseover="fadeOutImage(this)"
+							onmouseout="fadeInImage(this)"
+						>
+							<img src="/links/vide__________.png" class="link7" alt="Pierrot"/>
+						</a>
+					</li>-->
+					<li><a href="http://yap-yap-yap-yap.blogspot.com/">Pierrot</a></li>
+				
+					<!--<li style="height:50px;background-image:url(/links/rag2.png);">
+						<a
+							href="http://ragondin-blog.com/"
+							onmouseover="fadeOutImage(this)"
+							onmouseout="fadeInImage(this)"
+						>
+							<img src="/links/rag1.png" class="link8" alt="Ragondin"/>
+						</a>
+					</li>-->
+					<li><a href="http://ragondin-blog.com/">Ragondin</a></li>
+				
+					<!--<li style="height:50px;background-image:url(/links/vide_____.png);">
+						<a
+							href="http://romaq.canalblog.com/"
+							onmouseover="fadeOutImage(this)"
+							onmouseout="fadeInImage(this)"
+						>
+							<img src="/links/vide____.png" class="link9" alt="Romaq"/>
+						</a>
+					</li>-->
+					<li><a href="http://romaq.canalblog.com/">Romaq</a></li>
+				
+					<!--<li style="height:50px;background-image:url(/links/vide_______________.png);">
+						<a
+							href="http://setoan.blogspot.com/"
+							onmouseover="fadeOutImage(this)"
+							onmouseout="fadeInImage(this)"
+						>
+							<img src="/links/vide______________.png" class="link10" alt="Setoan"/>
+						</a>
+					</li>-->
+					<li><a href="http://setoan.blogspot.com/">Setoan</a></li>
+				
+				</ul>
+			
+		</div>	
+		<a class="menuitem submenuheader" href="#" onfocus="this.blur()"><span class="icon_folder">Archives</span></a>
+		<div class="submenu text">
+			
+				<ul>
+				
+					<li><a href="../../2009/2/index.html">Février 2009</a></li>
+				
+					<li><a href="../../2009/3/index.html">Mars 2009</a></li>
+				
+					<li><a href="../../2009/4/index.html">Avril 2009</a></li>
+				
+					<li><a href="../../2009/6/index.html">Juin 2009</a></li>
+				
+					<li><a href="../../2009/7/index.html">Juillet 2009</a></li>
+				
+					<li><a href="../../2009/9/index.html">Septembre 2009</a></li>
+				
+					<li><a href="../../2009/12/index.html">Décembre 2009</a></li>
+				
+					<li><a href="../../2010/10/index.html">Octobre 2010</a></li>
+				
+					<li><a href="../../2010/11/index.html">Novembre 2010</a></li>
+				
+					<li><a href="../../archives/index.html">Toutes les archives</a></li>
+				</ul>
+			
+		</div>	
+		<a class="menuitem submenuheader" href="#" onfocus="this.blur()"><span class="icon_pictures">Catégories</span></a>
+		<div class="submenu text">
+			
+				<ul>
+				
+					<li><a href="../../cat/3615-mylife/index.html">3615 Mylife</a></li>
+				
+					<li><a href="../../cat/screenshot/index.html">Screenshot</a></li>
+				
+					<li><a href="../../cat/jeux-videos/index.html">Jeux vidéo</a></li>
+				
+					<li><a href="../../cat/sans-categorie/index.html">Sans catégorie</a></li>
+				
+				</ul>
+			
+		</div>
+		<a class="menuitem submenuheader" href="#" onfocus="this.blur()"><span class="icon_feed">Syndication</span></a>
+		<div class="submenu text">
+			<ul>
+			<li><a href="../../feeds/rss/index.html">Fil rss</a></li>
+			<li><a href="../../feeds/rsscomments/index.html">Fil rss commentaires</a></li>
+			<li><a href="../../feeds/atom/index.html">Fil atom</a></li>
+			<li><a href="../../feeds/atomcomments/index.html">Fil atom commentaires</a></li>
+			</ul>
+		</div>
+		<a class="menuitem" href="../../about/index.html" onfocus="this.blur()"><span class="icon_information">À propos</span></a>
+	</div>
+
+		</div>
+	</div>
+	<script type="text/javascript">
+		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+		document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+		try {
+		var pageTracker = _gat._getTracker("UA-2508341-5");
+		pageTracker._trackPageview();
+		} catch(err) {}
+	</script>
+	</body>
+
+<!-- Mirrored from plopounet.net/page/2/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 01 May 2017 10:44:25 GMT -->
+</html>
+
