@@ -1,4 +1,4 @@
-# ![pingus](http://plopounet.net/pingus/wait.gif) plopounet.net
+# ![ ](http://plopounet.net/pingus/wait.gif) plopounet.net
 An archive of my old webcomic blog. Very egocentric. Meant to be funny.
 
 Was hosted by [alwaysdata](https://www.alwaysdata.com) and powered by [Django](https://www.djangoproject.com/) (a Python web framework). 
